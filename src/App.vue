@@ -20,12 +20,12 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-const deaconEnglish = 'DEACON';
-const priestEnglish = 'PRIEST';
-const choirEnglish = 'CHOIR';
-const deaconGreek = 'ΔΙΑΚΟΝΟΣ';
-const priestGreek = 'ΙΕΡΕΥΣ';
-const choirGreek = 'ΧΟΡΟΣ';
+const deaconActorEng = 'DEACON';
+const priestActorEng = 'PRIEST';
+const choirActorEng = 'CHOIR';
+const deaconActorGreek = 'ΔΙΑΚΟΝΟΣ';
+const priestActorGreek = 'ΙΕΡΕΥΣ';
+const choirActorGreek = 'ΧΟΡΟΣ';
 const lordHaveMercy = {
   english: {
     text: '( Lord, have mercy. )'
@@ -49,32 +49,32 @@ const sections = ref([{
   },
   body: [{
     english: {
-      actor: deaconEnglish,
+      actor: deaconActorEng,
       text: 'Master, give the blessing.'
     },
     greek: {
-      actor: deaconGreek,
+      actor: deaconActorGreek,
       text: 'Εὐλόγησον, Δέσποτα.',
     }
   },
   {
     english: {
-      actor: priestEnglish,
+      actor: priestActorEng,
       text: 'Blessed is the Kingdom of the Father and of the Son and of the Holy Spirit, now and forever and to the ages of ages.'
     },
     greek: {
-      actor: priestGreek,
+      actor: priestActorGreek,
       text: 'Εὐλογημένη ἡ Βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.',
     }
   },
     amen,
   {
     english: {
-      actor: deaconEnglish,
+      actor: deaconActorEng,
       text: 'In peace, let us pray to the Lord.'
     },
     greek: {
-      actor: deaconGreek,
+      actor: deaconActorGreek,
       text: 'Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.'
     }
   },
