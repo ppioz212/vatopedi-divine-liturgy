@@ -26,6 +26,22 @@ const choirEnglish = 'CHOIR';
 const deaconGreek = 'ΔΙΑΚΟΝΟΣ';
 const priestGreek = 'ΙΕΡΕΥΣ';
 const choirGreek = 'ΧΟΡΟΣ';
+const lordHaveMercy = {
+  english: {
+    text: '( Lord, have mercy. )'
+  },
+  greek: {
+    text: '( Κύριε, ἐλέησον. )'
+  }
+};
+const amen = {
+  english: {
+    text: '( Amen. )'
+  },
+  greek: {
+    text: '( Ἀμήν. )'
+  }
+};
 const sections = ref([{
   title: {
     english: 'Evlogimeni i Vasilia, Irinika',
@@ -51,14 +67,7 @@ const sections = ref([{
       text: 'Εὐλογημένη ἡ Βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.',
     }
   },
-  {
-    english: {
-      text: '( Amen. )'
-    },
-    greek: {
-      text: '( Ἀμήν. )'
-    }
-  },
+    amen,
   {
     english: {
       actor: deaconEnglish,
@@ -69,14 +78,7 @@ const sections = ref([{
       text: 'Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.'
     }
   },
-  {
-    english: {
-      text: '( Lord, have mercy. )'
-    },
-    greek: {
-      text: '( Κύριε, ἐλέησον. )'
-    }
-  },
+    lordHaveMercy,
   {
     english: {
       text: 'For the peace from above and for the salvation of our souls, let us pray to the Lord.'
@@ -85,14 +87,8 @@ const sections = ref([{
       text: 'Ὑπὲρ τῆς ἄνωθεν εἰρήνης καὶ τῆς σωτηρίας τῶν ψυχῶν ἡμῶν, τοῦ Κυρίου δεηθῶμεν.'
     }
   },
-  {
-    english: {
-      text: '( Lord, have mercy. )'
-    },
-    greek: {
-      text: '( Κύριε, ἐλέησον. )'
-    }
-  }]
+    lordHaveMercy
+  ]
 }]);
 const sectionTitleList = ref<string[]>(['Evlogimeni i Vasilia, Irinika', 'Proti Stasi Tipokon', 'Defteri Stasi Tipikon',
   'Makarismi', 'Mikri Isodos, apolitikia', 'Trisagios Imnos', 'Dinamis Trisagiou Meta Kratimaton', 'Prokimeno Apostolou kai Apostolos',
