@@ -10,9 +10,9 @@
     </section>
     <section>
       <h2>{{ section.title.greek }}</h2>
-      <div v-for="(bodySection, index) in section.body" :key="index">
-        <p class="actor">{{ bodySection.greek.actor }}</p>
-        <p> {{ bodySection.greek.text }}</p>
+      <div v-for="(body, index) in section.body" :key="index">
+        <p class="actor">{{ body.greek.actor }}</p>
+        <p> {{ body.greek.text }}</p>
       </div>
     </section>
   </main>
@@ -20,13 +20,13 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-const deaconActorEng = 'DEACON';
-const priestActorEng = 'PRIEST';
-const choirActorEng = 'CHOIR';
-const deaconActorGreek = 'ΔΙΑΚΟΝΟΣ';
-const priestActorGreek = 'ΙΕΡΕΥΣ';
-const choirActorGreek = 'ΧΟΡΟΣ';
-const lordHaveMercy = {
+const DEACON_ACTOR_ENG = 'DEACON';
+const PRIEST_ACTOR_ENG = 'PRIEST';
+const CHOIR_ACTOR_ENG = 'CHOIR';
+const DEACON_ACTOR_GREEK = 'ΔΙΑΚΟΝΟΣ';
+const PRIEST_ACTOR_GREEK = 'ΙΕΡΕΥΣ';
+const CHOIR_ACTOR_GREEK = 'ΧΟΡΟΣ';
+const LORD_HAVE_MERCY = {
   english: {
     text: '( Lord, have mercy. )'
   },
@@ -34,7 +34,7 @@ const lordHaveMercy = {
     text: '( Κύριε, ἐλέησον. )'
   }
 };
-const amen = {
+const AMEN = {
   english: {
     text: '( Amen. )'
   },
@@ -49,36 +49,36 @@ const sections = ref([{
   },
   body: [{
     english: {
-      actor: deaconActorEng,
+      actor: DEACON_ACTOR_ENG,
       text: 'Master, give the blessing.'
     },
     greek: {
-      actor: deaconActorGreek,
+      actor: DEACON_ACTOR_GREEK,
       text: 'Εὐλόγησον, Δέσποτα.',
     }
   },
   {
     english: {
-      actor: priestActorEng,
+      actor: PRIEST_ACTOR_ENG,
       text: 'Blessed is the Kingdom of the Father and of the Son and of the Holy Spirit, now and forever and to the ages of ages.'
     },
     greek: {
-      actor: priestActorGreek,
+      actor: PRIEST_ACTOR_GREEK,
       text: 'Εὐλογημένη ἡ Βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.',
     }
   },
-    amen,
+    AMEN,
   {
     english: {
-      actor: deaconActorEng,
+      actor: DEACON_ACTOR_ENG,
       text: 'In peace, let us pray to the Lord.'
     },
     greek: {
-      actor: deaconActorGreek,
+      actor: DEACON_ACTOR_GREEK,
       text: 'Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.'
     }
   },
-    lordHaveMercy,
+    LORD_HAVE_MERCY,
   {
     english: {
       text: 'For the peace from above and for the salvation of our souls, let us pray to the Lord.'
@@ -87,7 +87,7 @@ const sections = ref([{
       text: 'Ὑπὲρ τῆς ἄνωθεν εἰρήνης καὶ τῆς σωτηρίας τῶν ψυχῶν ἡμῶν, τοῦ Κυρίου δεηθῶμεν.'
     }
   },
-    lordHaveMercy
+    LORD_HAVE_MERCY
   ]
 }]);
 const sectionTitleList = ref<string[]>(['Evlogimeni i Vasilia, Irinika', 'Proti Stasi Tipokon', 'Defteri Stasi Tipikon',
