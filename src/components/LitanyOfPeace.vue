@@ -1,5 +1,5 @@
 <template>
-  <SectionTemplate :section="section"/>
+  <SectionTemplate :section="section" />
 </template>
 
 <script setup lang="ts">
@@ -10,31 +10,25 @@ import SectionTemplate from './SectionTemplate.vue';
 const main = useMainStore()
 const BLESS_MASTER = {
   english: {
-    actor: main.DEACON_ACTOR_ENG,
     text: 'Master, give the blessing.'
   },
   greek: {
-    actor: main.DEACON_ACTOR_GREEK,
     text: 'Εὐλόγησον, Δέσποτα.',
   }
 }
 const BLESSED_IS_THE_KINGDOM = {
   english: {
-    actor: main.PRIEST_ACTOR_ENG,
     text: 'Blessed is the Kingdom of the Father and of the Son and of the Holy Spirit, now and forever and to the ages of ages.'
   },
   greek: {
-    actor: main.PRIEST_ACTOR_GREEK,
     text: 'Εὐλογημένη ἡ Βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.',
   }
 }
 const IN_PEACE_LET_US_PRAY = {
   english: {
-    actor: main.DEACON_ACTOR_ENG,
     text: 'In peace, let us pray to the Lord.'
   },
   greek: {
-    actor: main.DEACON_ACTOR_GREEK,
     text: 'Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.'
   }
 }
@@ -101,9 +95,12 @@ const section = reactive({
     greek: 'Εὐλογημένη ἡ Βασιλεία, Εἰρηνικά'
   },
   body: [
+    main.DEACON,
     BLESS_MASTER,
+    main.PRIEST,
     BLESSED_IS_THE_KINGDOM,
     main.AMEN,
+    main.DEACON,
     IN_PEACE_LET_US_PRAY,
     main.LORD_HAVE_MERCY,
     FOR_THE_PEACE_ABOVE,
@@ -128,6 +125,7 @@ const section = reactive({
     main.LORD_HAVE_MERCY,
     main.COMMEMORATING_THE_PANAGIA,
     main.TO_YOU_O_LORD,
+    main.PRIEST,
     main.FOR_TO_YOU_BELONG_ALL_GLORY_HONOR_WORSHIP,
     main.AMEN
   ]

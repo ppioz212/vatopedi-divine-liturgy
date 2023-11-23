@@ -16,12 +16,31 @@ export const useMainStore = defineStore('main', {
       DEACON_ACTOR_GREEK: DEACON_ACTOR_GREEK,
       PRIEST_ACTOR_GREEK: PRIEST_ACTOR_GREEK,
       CHOIR_ACTOR_GREEK: CHOIR_ACTOR_GREEK,
-      CHOIR_OBJ: {
+      PRIEST: {
+        isActor: true,
         english: {
-          actor: CHOIR_ACTOR_ENG
+          text: PRIEST_ACTOR_ENG
         },
         greek: {
-          actor: CHOIR_ACTOR_GREEK
+          text: PRIEST_ACTOR_GREEK
+        }
+      },
+      DEACON: {
+        isActor: true,
+        english: {
+          text: DEACON_ACTOR_ENG
+        },
+        greek: {
+          text: DEACON_ACTOR_GREEK
+        }
+      },
+      CHOIR: {
+        isActor: true,
+        english: {
+          text: CHOIR_ACTOR_ENG
+        },
+        greek: {
+          text: CHOIR_ACTOR_GREEK
         }
       },
       LORD_HAVE_MERCY: {
@@ -85,21 +104,17 @@ export const useMainStore = defineStore('main', {
       },
       FOR_TO_YOU_BELONG_ALL_GLORY_HONOR_WORSHIP: {
         english: {
-          actor: PRIEST_ACTOR_ENG,
           text: 'For to You belong all glory, honor, and worship, to the Father and to the Son and to the Holy Spirit, now and forever and to the ages of ages.'
         },
         greek: {
-          actor: PRIEST_ACTOR_GREEK,
           text: 'Ὅτι πρέπει σοι πᾶσα δόξα, τιμὴ καὶ προσκύνησις, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
         }
       },
       FOR_YOURS_IS_DOMINION_POWER_GLORY: {
         english: {
-          actor: PRIEST_ACTOR_ENG,
           text: 'For Yours is the dominion, and Yours is the kingdom and the power and the glory, of the Father and of the Son and of the Holy Spirit, now and forever and to the ages of ages.'
         },
         greek: {
-          actor: PRIEST_ACTOR_GREEK,
           text: 'Ὅτι σὸν τὸ κράτος καὶ σοῦ ἐστιν ἡ βασιλεία καὶ ἡ δύναμις καὶ ἡ δόξα, τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
         }
       },
@@ -121,11 +136,9 @@ export const useMainStore = defineStore('main', {
       },
       AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY: {
         english: {
-          actor: DEACON_ACTOR_ENG,
           text: 'Again and again, in peace, let us pray to the Lord.'
         },
         greek: {
-          actor: DEACON_ACTOR_GREEK,
           text: 'Ἔτι καὶ ἔτι ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.'
         }
       }

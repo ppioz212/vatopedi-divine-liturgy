@@ -10,11 +10,9 @@ const main = useMainStore()
 
 const INTRO = {
   english: {
-    actor: main.CHOIR_ACTOR_ENG,
     text: 'Bless the Lord, O my soul, Bless the Lord!'
   },
   greek: {
-    actor: main.CHOIR_ACTOR_GREEK,
     text: 'Εὐλόγει ἡ ψυχή μου, τὸν Κύριον, εὐλογητὸς εἶ, Κύριε!'
   }
 }
@@ -231,6 +229,7 @@ const section = reactive({
     greek: 'Α΄ Στάσις Τυπικῶν'
   },
   body: [
+    main.CHOIR,
     INTRO,
     VERSE1,
     VERSE2,
@@ -257,12 +256,14 @@ const section = reactive({
     VERSE22,
     main.GLORIA_PATRI_EE_NOW_AND_EVER_AMEN,
     OUTRO,
+    main.DEACON,
     main.AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY,
     main.LORD_HAVE_MERCY,
     main.HELP_US_SAVE_US,
     main.LORD_HAVE_MERCY,
     main.COMMEMORATING_THE_PANAGIA,
     main.TO_YOU_O_LORD,
+    main.PRIEST,
     main.FOR_YOURS_IS_DOMINION_POWER_GLORY,
     main.AMEN
   ]

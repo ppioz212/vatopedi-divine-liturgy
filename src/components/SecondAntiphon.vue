@@ -220,7 +220,7 @@ const section = reactive({
     greek: 'Β΄ Στάσις Τυπικῶν'
   },
   body: [
-    main.CHOIR_OBJ,
+    main.CHOIR,
     main.GLORIA_PATRI_TOU,
     VERSE1,
     VERSE2,

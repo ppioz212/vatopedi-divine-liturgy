@@ -8,19 +8,17 @@
         <h2>{{ section.title.english }}</h2>
       </div>
     </div>
-    <div class="body" v-for="(bodySection, index) in section.body" :key="index">
+    <div class="body" v-for="(element, index) in section.body" :key="index">
       <div class="greek">
-        <p class="actor">{{ bodySection.greek.actor }}</p>
-        <p class="text" :class="{ italics: bodySection.isItalics }">
-          <span v-show="bodySection.verseNum != null" class="verse">Στίχος {{ bodySection.verseNum }}: </span>
-          {{ bodySection.greek.text }}
+        <p class="text" :class="{ italics: element.isItalics, actor: element.isActor }">
+          <span v-show="element.verseNum != null" class="verse">Στίχος {{ element.verseNum }}: </span>
+          {{ element.greek.text }}
         </p>
       </div>
       <div class="english">
-        <p class="actor">{{ bodySection.english.actor }}</p>
-        <p class="text" :class="{ italics: bodySection.isItalics }">
-          <span v-show="bodySection.verseNum != null" class="verse">Verse {{ bodySection.verseNum }}: </span>
-          {{ bodySection.english.text }}
+        <p class="text" :class="{ italics: element.isItalics, actor: element.isActor }">
+          <span v-show="element.verseNum != null" class="verse">Verse {{ element.verseNum }}: </span>
+          {{ element.english.text }}
         </p>
       </div>
     </div>
@@ -28,8 +26,47 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps(['section'])
+defineProps(['section'])
 </script>
 
 <style scoped>
+.body p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.liturgy .greek {
+  border-right: 1px solid black;
+}
+
+.liturgy>div {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.liturgy div>div {
+  width: 50%;
+  padding: 0 5px;
+}
+
+.liturgy {
+  text-align: center;
+  margin: 0;
+  /* display: flex; */
+}
+
+.italics {
+  font-style: italic;
+}
+
+.text {
+  font-weight: 600;
+}
+
+.actor {
+  color: red;
+  text-align: left;
+  font-weight: 600;
+}
 </style>

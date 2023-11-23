@@ -1,5 +1,5 @@
 <template>
-  <SectionTemplate :section="section"/>
+  <SectionTemplate :section="section" />
 </template>
 
 <script setup lang="ts">
@@ -90,6 +90,7 @@ const section = reactive({
     greek: 'Ἀπολυτίκια, εὐχὴ Κολλύβων'
   },
   body: [
+    main.DEACON,
     LET_US_COMPLETE_OUR_PRAYER,
     main.LORD_HAVE_MERCY,
     FOR_THE_PRECIOUS_GIFTS,
