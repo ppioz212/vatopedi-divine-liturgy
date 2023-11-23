@@ -1,29 +1,12 @@
 <template>
-  <div class="liturgy">
-    <div class="header">
-      <div class="greek">
-        <h2> {{ section.title.greek }}</h2>
-      </div>
-      <div class="english">
-        <h2>{{ section.title.english }}</h2>
-      </div>
-    </div>
-    <div class="body" v-for="(bodySection, index) in section.body" :key="index">
-      <div class="greek">
-        <p class="actor">{{ bodySection.greek.actor }}</p>
-        <p class="text" :class="{ italics: bodySection.isItalics }"> {{ bodySection.greek.text }}</p>
-      </div>
-      <div class="english">
-        <p class="actor">{{ bodySection.english.actor }}</p>
-        <p class="text" :class="{ italics: bodySection.isItalics }"> {{ bodySection.english.text }}</p>
-      </div>
-    </div>
-  </div>
+  <SectionTemplate :section="section"/>
 </template>
 
 <script setup lang="ts">
 import { useMainStore } from '@/store';
 import { reactive } from 'vue';
+import SectionTemplate from './SectionTemplate.vue';
+
 const main = useMainStore()
 const BLESS_MASTER = {
   english: {
