@@ -3,19 +3,15 @@ import { defineStore } from 'pinia'
 const DEACON_ACTOR_ENG = 'DEACON'
 const PRIEST_ACTOR_ENG = 'PRIEST'
 const CHOIR_ACTOR_ENG = 'CHOIR'
+const PEOPLE_ACTOR_ENG = 'PEOPLE'
 const DEACON_ACTOR_GREEK = 'ΔΙΑΚΟΝΟΣ'
 const PRIEST_ACTOR_GREEK = 'ΙΕΡΕΥΣ'
 const CHOIR_ACTOR_GREEK = 'ΧΟΡΟΣ'
+const PEOPLE_ACTOR_GREEK = 'ΛΑΟΣ'
 
 export const useMainStore = defineStore('main', {
   state: () => {
     return {
-      DEACON_ACTOR_ENG: DEACON_ACTOR_ENG,
-      PRIEST_ACTOR_ENG: PRIEST_ACTOR_ENG,
-      CHOIR_ACTOR_ENG: CHOIR_ACTOR_ENG,
-      DEACON_ACTOR_GREEK: DEACON_ACTOR_GREEK,
-      PRIEST_ACTOR_GREEK: PRIEST_ACTOR_GREEK,
-      CHOIR_ACTOR_GREEK: CHOIR_ACTOR_GREEK,
       PRIEST: {
         isActor: true,
         english: {
@@ -41,6 +37,15 @@ export const useMainStore = defineStore('main', {
         },
         greek: {
           text: CHOIR_ACTOR_GREEK
+        }
+      },
+      PEOPLE: {
+        isActor: true,
+        english: {
+          text: PEOPLE_ACTOR_ENG
+        },
+        greek: {
+          text: PEOPLE_ACTOR_GREEK
         }
       },
       LORD_HAVE_MERCY: {
@@ -70,6 +75,15 @@ export const useMainStore = defineStore('main', {
           text: '( Σοί, Κύριε. )'
         }
       },
+      AND_WITH_YOUR_SPIRIT: {
+        isItalics: true,
+        english: {
+          text: '( And with your spirit. )'
+        },
+        greek: {
+          text: '( Καὶ τῷ πνεύματί σου. )'
+        }
+      },
       HELP_US_SAVE_US: {
         english: {
           text: 'Help us, save us, have mercy on us, and protect us, O God, by Your grace.'
@@ -84,6 +98,14 @@ export const useMainStore = defineStore('main', {
         },
         greek: {
           text: 'Τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας μετὰ πάντων τῶν ἁγίων μνημονεύσαντες, ἑαυτοὺς καὶ ἀλλήλους καὶ πᾶσαν τὴν ζωὴν ἡμῶν Χριστῷ τῷ Θεῷ παραθώμεθα.'
+        }
+      },
+      PEACE_BE_WITH_YOU_ALL: {
+        english: {
+          text: 'Peace be with you all.'
+        },
+        greek: {
+          text: 'Εἰρήνη πᾶσι.'
         }
       },
       FOR_DELIVERANCE_DANGER: {

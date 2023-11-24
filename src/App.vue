@@ -19,6 +19,9 @@ import LitanyOfCompletion from './components/LitanyOfCompletion.vue';
 </script>
 
 <style>
+:root {
+  --section-heading: brown;
+}
 body {
   margin: 0;
   background-color: beige;
@@ -30,7 +33,7 @@ main {
 }
 
 h2 {
-  color: brown;
+  color: var(--section-heading);
   font-size: 1.1em;
 }
 </style>

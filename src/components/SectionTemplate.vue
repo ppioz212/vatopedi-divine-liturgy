@@ -31,7 +31,11 @@
 defineProps(['section'])
 </script>
 
-<style scoped>
+<style>
+:root {
+  --sub-heading-color: rgb(255, 0, 0);
+}
+
 .body p {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -68,22 +72,18 @@ defineProps(['section'])
 
 .actor {
   font-size: 90%;
-  color: red;
+  color: var(--sub-heading-color);
   text-align: left;
 }
 
+.sub-heading,
 .verse {
-  color: red;
-  font-weight: 600;
-}
-
-.sub-heading {
-  color: red;
+  color: var(--sub-heading-color);
 }
 
 p.hymn::first-letter {
   initial-letter: 2;
-  color: red;
+  color: var(--sub-heading-color);
   font-family: LiberationSerif-Regular;
   font-size: 200%;
   font-weight: 300;

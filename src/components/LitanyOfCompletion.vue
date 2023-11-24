@@ -19,11 +19,9 @@ const GRANT_THIS_O_LORD = {
 }
 const LET_US_COMPLETE_OUR_PRAYER = {
   english: {
-    actor: main.DEACON_ACTOR_ENG,
     text: 'Let us complete our prayer to the Lord.'
   },
   greek: {
-    actor: main.DEACON_ACTOR_GREEK,
     text: 'Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ.',
   }
 }
@@ -83,7 +81,39 @@ const A_CHRISTIAN_ENDING = {
     text: 'Χριστιανὰ τὰ τέλη τῆς ζωῆς ἡμῶν, ἀνώδυνα, ἀνεπαίσχυντα, εἰρηνικά, καὶ καλὴν ἀπολογίαν τὴν ἐπὶ τοῦ φοβεροῦ βήματος τοῦ Χριστοῦ αἰτησώμεθα.',
   }
 }
-
+const THROUGH_THE_MERCIES_OF_YOUR_ONLY_BEGOTTEN_SON = {
+  english: {
+    text: 'Through the mercies of Your only-begotten Son, with Whom You are blessed, together with Your all-holy, good, and life-creating Spirit, now and forever and to the ages of ages.'
+  },
+  greek: {
+    text: "Διὰ τῶν οἰκτιρμῶν τοῦ μονογενοῦς σου Υἱοῦ, μεθ' οὗ εὐλογητὸς εἶ, σὺν τῷ Παναγίῳ καὶ ἀγαθῷ καὶ ζωοποιῷ σου Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
+  }
+}
+const LET_US_LOVE_ONE_ANOTHER = {
+  english: {
+    text: 'Let us love one another, that with one mind we may confess.'
+  },
+  greek: {
+    text: "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν."
+  }
+}
+const THE_TRINITY_ONE_ESSENCE_UNDIVIDED = {
+  isHymn: true,
+  english: {
+    text: 'Father, Son, and Holy Spirit: Trinity, one in essence and undivided.'
+  },
+  greek: {
+    text: "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον."
+  }
+}
+const THE_DOORS_THE_DOORS_OF_WISDOM = {
+    english: {
+    text: 'The doors! The doors! In wisdom, let us be attentive!'
+  },
+  greek: {
+    text: "Τὰς θύρας, τὰς θύρας· ἐν σοφίᾳ πρόσχωμεν."
+  }
+}
 const section = reactive({
   title: {
     english: 'The Litany Of Completion',
@@ -115,7 +145,19 @@ const section = reactive({
     A_CHRISTIAN_ENDING,
     GRANT_THIS_O_LORD,
     main.COMMEMORATING_THE_PANAGIA,
-    main.TO_YOU_O_LORD
+    main.TO_YOU_O_LORD,
+    main.PRIEST,
+    THROUGH_THE_MERCIES_OF_YOUR_ONLY_BEGOTTEN_SON,
+    main.AMEN,
+    main.PRIEST,
+    main.PEACE_BE_WITH_YOU_ALL,
+    main.AND_WITH_YOUR_SPIRIT,
+    main.DEACON,
+    LET_US_LOVE_ONE_ANOTHER,
+    main.CHOIR,
+    THE_TRINITY_ONE_ESSENCE_UNDIVIDED,
+    main.DEACON,
+    THE_DOORS_THE_DOORS_OF_WISDOM
   ]
 });
 </script>
