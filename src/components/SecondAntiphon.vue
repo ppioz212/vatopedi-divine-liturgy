@@ -6,6 +6,7 @@
 import { useMainStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
+
 const main = useMainStore()
 const PSALM_145_SUBHEADING = {
   isSubHeading: true,
@@ -124,6 +125,7 @@ const OUTRO = {
   }
 }
 const ONLY_BEGOTTEN_SON_AND_LOGOS_OF_GOD = {
+  isHymn: true,
   english: {
     text: 'Only-begotten Son and Logos of God, being immortal, You condescended for our salvation to take flesh from the holy Theotokos and ever-virgin Mary and, without change, became man. Christ, our God, You were crucified and conquered death by death. Being one of the Holy Trinity, glorified with the Father and the Holy Spirit: Save us.'
   },

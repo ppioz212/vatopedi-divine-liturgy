@@ -11,14 +11,14 @@
     <div class="body" v-for="(element, index) in section.body" :key="index">
       <div class="greek">
         <p class="text"
-          :class="{ italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading }">
+          :class="{ italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading, hymn: element.isHymn }">
           <span v-show="element.verseNum != null" class="verse">Στίχος {{ element.verseNum }}: </span>
           {{ element.greek.text }}
         </p>
       </div>
       <div class="english">
         <p class="text"
-          :class="{ italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading }">
+          :class="{ italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading, hymn: element.isHymn }">
           <span v-show="element.verseNum != null" class="verse">Verse {{ element.verseNum }}: </span>
           {{ element.english.text }}
         </p>
@@ -67,6 +67,7 @@ defineProps(['section'])
 }
 
 .actor {
+  font-size: 90%;
   color: red;
   text-align: left;
 }
@@ -78,5 +79,14 @@ defineProps(['section'])
 
 .sub-heading {
   color: red;
+}
+
+p.hymn::first-letter {
+  initial-letter: 2;
+  color: red;
+  font-family: LiberationSerif-Regular;
+  font-size: 200%;
+  font-weight: 300;
+  padding-right: 4px;
 }
 </style>

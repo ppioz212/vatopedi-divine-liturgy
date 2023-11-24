@@ -102,6 +102,7 @@ const section = reactive({
     main.HELP_US_SAVE_US,
     main.LORD_HAVE_MERCY,
     THAT_THE_WHOLE_DAY_MAY_BE,
+    main.CHOIR,
     GRANT_THIS_O_LORD,
     FOR_AN_ANGEL_OF_PEACE,
     GRANT_THIS_O_LORD,

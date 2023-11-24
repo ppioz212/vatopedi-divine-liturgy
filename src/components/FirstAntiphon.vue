@@ -6,6 +6,7 @@
 import { useMainStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
+
 const main = useMainStore()
 const PSALM_102_SUBHEADING = {
   isSubHeading: true,
