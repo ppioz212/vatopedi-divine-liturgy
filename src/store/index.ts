@@ -118,6 +118,14 @@ export const useMainStore = defineStore('main', {
           text: 'Ὅτι σὸν τὸ κράτος καὶ σοῦ ἐστιν ἡ βασιλεία καὶ ἡ δύναμις καὶ ἡ δόξα, τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ Ἁγίου Πνεύματος, νῦν καὶ ἀεὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
         }
       },
+      FOR_YOU_O_GOD_ARE_GOOD_AND_LOVE_MANKIND: {
+        english: {
+          text: 'For You, O God, are good and love mankind, and to You we offer glory, to the Father and to the Son and to the Holy Spirit, now and forever, and to the ages of ages.'
+        },
+        greek: {
+          text: 'Ὅτι ἀγαθὸς καὶ φιλάνθρωπος Θεὸς ὑπάρχεις καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
+        }
+      },
       GLORIA_PATRI_EE_NOW_AND_EVER_AMEN: {
         english: {
           text: 'Glory to the Father and to the Son and to the Holy Spirit. Now and forever and to the ages of ages. Amen.'
@@ -132,6 +140,14 @@ export const useMainStore = defineStore('main', {
         },
         greek: {
           text: 'Δόξα τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι.'
+        }
+      },
+      NOW_AND_EVER_AND_UNTO_AGES_AMEN: {
+        english: {
+          text: 'Now and forever and to the ages of ages. Amen.'
+        },
+        greek: {
+          text: 'Καὶ νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν.'
         }
       },
       AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY: {

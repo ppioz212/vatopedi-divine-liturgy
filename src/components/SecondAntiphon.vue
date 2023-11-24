@@ -10,208 +10,116 @@ const main = useMainStore()
 const VERSE1 = {
   verseNum: 1,
   english: {
-    text: 'Bless the Lord, O my soul, And all that is within me, bless His holy name!'
+    text: 'Praise the Lord, O my soul!'
   },
   greek: {
-    text: 'Εὐλόγει ἡ ψυχή μου, τὸν Κύριον, καὶ πάντα τὰ ἐντός μου, τὸ ὄνομα τὸ ἅγιον αὐτοῦ.'
+    text: 'Αἴνει ἡ ψυχή μου τὸν Κύριον'
   }
 }
 const VERSE2 = {
   verseNum: 2,
   english: {
-    text: 'Bless the Lord, O my soul, And forget not all His benefits.'
+    text: 'While I live I will praise the Lord; I will sing praises to my God while I have my being.'
   },
   greek: {
-    text: 'Εὐλόγει ἡ ψυχή μου, τὸν Κύριον, καὶ μὴ ἐπιλανθάνου πάσας τὰς ἀνταποδόσεις αὐτοῦ.'
+    text: 'αἰνέσω Κύριον ἐν τῇ ζωῇ μου· ψαλῶ τῷ Θεῷ μου ἕως ὑπάρχω.'
   }
 }
 const VERSE3 = {
   verseNum: 3,
   english: {
-    text: 'Who forgives all your iniquities, Who heals all your diseases.'
+    text: 'Do not put your trust in princes, Nor in a son of man, in whom there is no help.'
   },
   greek: {
-    text: 'Τὸν εὐϊλατεύοντα πάσας τὰς ἀνομίας σου, τὸν ἰώμενον πάσας τὰς νόσους σου.'
+    text: 'Μὴ πεποίθατε ἐπ᾿ ἄρχοντας, ἐπὶ υἱοὺς ἀνθρώπων, οἷς οὐκ ἔστι σωτηρία.'
   }
 }
-const VERSE4 = {
-  verseNum: 4,
+const VERSE4A = {
+  verseNum: '4a',
   english: {
-    text: 'Who redeems your life from destruction, Who crowns you with loving kindness and tender mercies.'
+    text: 'His spirit departs, he returns to his earth'
   },
   greek: {
-    text: 'Τὸν λυτρούμενον ἐκ φθορᾶς τὴν ζωήν σου, τὸν στεφανοῦντά σε ἐν ἐλέει καὶ οἰκτιρμοῖς.'
+    text: 'Ἐξελεύσεται τὸ πνεῦμα αὐτοῦ, καὶ ἐπιστρέψει εἰς τὴν γῆν αὐτοῦ.'
+  }
+}
+const VERSE4B = {
+  verseNum: '4b',
+  english: {
+    text: "In that very day his plans perish."
+  },
+  greek: {
+    text: 'Ἐν ἐκείνῃ τῇ ἡμέρᾳ, ἀπολοῦνται πάντες οἱ διαλογισμοὶ αὐτοῦ.'
   }
 }
 const VERSE5 = {
   verseNum: 5,
   english: {
-    text: "Who satisfies your mouth with good things, So that your youth is renewed like the eagle’s."
+    text: "Happy is he who has the God of Jacob for his help, Whose hope is in the Lord his God."
   },
   greek: {
-    text: 'τὸν ἐμπιπλῶντα ἐν ἀγαθοῖς τὴν ἐπιθυμίαν σου ἀνακαινισθήσεται ὡς ἀετοῦ ἡ νεότης σου'
+    text: "Μακάριος, οὗ ὁ Θεὸς Ἰακὼβ βοηθὸς αὐτοῦ, ἡ ἐλπὶς αὐτοῦ ἐπὶ Κύριον τὸν Θεὸν αὐτοῦ."
   }
 }
 const VERSE6 = {
   verseNum: 6,
   english: {
-    text: "The Lord executes righteousness, And justice for all who are oppressed."
+    text: "Who made heaven and earth, the sea, and all that is in them; Who keeps truth forever"
   },
   greek: {
-    text: "ποιῶν ἐλεημοσύνας ὁ κύριος καὶ κρίμα πᾶσι τοῖς ἀδικουμένοις."
+    text: "Τὸν ποιήσαντα τὸν οὐρανὸν καὶ τὴν γῆν, τὴν θάλασσαν καὶ πάντα τὰ ἐν αὐτοῖς. Τὸν φυλάσσοντα ἀλήθειαν εἰς τὸν αἰῶνα"
   }
 }
 const VERSE7 = {
   verseNum: 7,
   english: {
-    text: "He made known His ways to Moses, His acts to the children of Israel."
+    text: "Who executes justice for the oppressed, Who gives food to the hungry. The Lord gives freedom to the prisoners."
   },
   greek: {
-    text: "Ἐγνώρισε τὰς ὁδοὺς αὐτοῦ τῷ Μωϋσῇ, τοῖς υἱοῖς Ἰσραὴλ τὰ θελήματα αὐτοῦ."
+    text: "ποιοῦντα κρῖμα τοῖς ἀδικουμένοις, διδόντα τροφὴν τοῖς πεινῶσι. Κύριος λύει πεπεδημένους·"
   }
 }
 const VERSE8 = {
   verseNum: 8,
   english: {
-    text: "The Lord is merciful and gracious, Slow to anger, and abounding in mercy."
+    text: "The Lord opens the eyes of the blind; The Lord raises those who are bowed down; The Lord loves the righteous."
   },
   greek: {
-    text: "οἰκτίρμων καὶ ἐλεήμων ὁ κύριος μακρόθυμος καὶ πολυέλεος"
+    text: "Κύριος σοφοῖ τυφλούς· Κύριος ἀνορθοῖ κατεῤῥαγμένους· Κύριος ἀγαπᾷ δικαίους"
   }
 }
 const VERSE9 = {
   verseNum: 9,
   english: {
-    text: "He will not always strive with us, Nor will He keep His anger forever."
+    text: "The Lord watches over the strangers; He relieves the fatherless and widow; But the way of the wicked He turns upside down."
   },
   greek: {
-    text: "οὐκ εἰς τέλος ὀργισθήσεται οὐδὲ εἰς τὸν αἰῶνα μηνιεῖ"
+    text: "Κύριος φυλάσσει τοὺς προσηλύτους. Ὀρφανὸν καὶ χήραν ἀναλήψεται, καὶ ὁδὸν ἁμαρτωλῶν ἀφανιεῖ."
   }
 }
 const VERSE10 = {
   verseNum: 10,
   english: {
-    text: "He has not dealt with us according to our sins, Nor punished us according to our iniquities."
+    text: "The Lord shall reign forever, Your God, O Zion, to all generations."
   },
   greek: {
-    text: "οὐ κατὰ τὰς ἁμαρτίας ἡμῶν ἐποίησεν ἡμῖν οὐδὲ κατὰ τὰς ἀνομίας ἡμῶν ἀνταπέδωκεν ἡμῖν"
-  }
-}
-const VERSE11 = {
-  verseNum: 11,
-  english: {
-    text: "For as the heavens are high above the earth, So great is His mercy toward those who fear Him; "
-  },
-  greek: {
-    text: "ὅτι κατὰ τὸ ὕψος τοῦ οὐρανοῦ ἀπὸ τῆς γῆς ἐκραταίωσεν κύριος τὸ ἔλεος αὐτοῦ ἐπὶ τοὺς φοβουμένους αὐτόν"
-  }
-}
-const VERSE12 = {
-  verseNum: 12,
-  english: {
-    text: "As far as the east is from the west, So far has He removed our transgressions from us."
-  },
-  greek: {
-    text: "καθ᾽ ὅσον ἀπέχουσιν ἀνατολαὶ ἀπὸ δυσμῶν ἐμάκρυνεν ἀφ᾽ ἡμῶν τὰς ἀνομίας ἡμῶν"
-  }
-}
-const VERSE13 = {
-  verseNum: 13,
-  english: {
-    text: "As a father pities his children, So the Lord pities those who fear Him."
-  },
-  greek: {
-    text: "καθὼς οἰκτίρει πατὴρ υἱούς οἰκτίρησεν κύριος τοὺς φοβουμένους αὐτόν"
-  }
-}
-const VERSE14 = {
-  verseNum: 14,
-  english: {
-    text: "For He knows our frame; He remembers that we are dust."
-  },
-  greek: {
-    text: "ὅτι αὐτὸς ἔγνω τὸ πλάσμα ἡμῶν μνήσθητι ὅτι χοῦς ἐσμεν"
-  }
-}
-const VERSE15 = {
-  verseNum: 15,
-  english: {
-    text: "As for man, his days are like grass; As a flower of the field, so he flourishes."
-  },
-  greek: {
-    text: "ἄνθρωπος ὡσεὶ χόρτος αἱ ἡμέραι αὐτοῦ ὡσεὶ ἄνθος τοῦ ἀγροῦ οὕτως ἐξανθήσει"
-  }
-}
-const VERSE16 = {
-  verseNum: 16,
-  english: {
-    text: "For the wind passes over it, and it is gone, And its place remembers it no more."
-  },
-  greek: {
-    text: "ὅτι πνεῦμα διῆλθεν ἐν αὐτῷ καὶ οὐχ ὑπάρξει καὶ οὐκ ἐπιγνώσεται ἔτι τὸν τόπον αὐτοῦ"
-  }
-}
-const VERSE17 = {
-  verseNum: 17,
-  english: {
-    text: "But the mercy of the Lord is from everlasting to everlasting on those who fear Him, And His righteousness to children’s children"
-  },
-  greek: {
-    text: "τὸ δὲ ἔλεος τοῦ κυρίου ἀπὸ τοῦ αἰῶνος καὶ ἕως τοῦ αἰῶνος ἐπὶ τοὺς φοβουμένους αὐτόν καὶ ἡ δικαιοσύνη αὐτοῦ ἐπὶ υἱοὺς υἱῶν"
-  }
-}
-const VERSE18 = {
-  verseNum: 18,
-  english: {
-    text: "To such as keep His covenant, And to those who remember His commandments to do them."
-  },
-  greek: {
-    text: "τοῖς φυλάσσουσιν τὴν διαθήκην αὐτοῦ καὶ μεμνημένοις τῶν ἐντολῶν αὐτοῦ τοῦ ποιῆσαι αὐτάς"
-  }
-}
-const VERSE19 = {
-  verseNum: 19,
-  english: {
-    text: "The Lord has established His throne in heaven, And His kingdom rules over all."
-  },
-  greek: {
-    text: "κύριος ἐν τῷ οὐρανῷ ἡτοίμασεν τὸν θρόνον αὐτοῦ καὶ ἡ βασιλεία αὐτοῦ πάντων δεσπόζει"
-  }
-}
-const VERSE20 = {
-  verseNum: 20,
-  english: {
-    text: "Bless the Lord, you His angels, Who excel in strength, who do His word, Heeding the voice of His word."
-  },
-  greek: {
-    text: "εὐλογεῖτε τὸν κύριον πάντες οἱ ἄγγελοι αὐτοῦ δυνατοὶ ἰσχύι ποιοῦντες τὸν λόγον αὐτοῦ τοῦ ἀκοῦσαι τῆς φωνῆς τῶν λόγων αὐτοῦ"
-  }
-}
-const VERSE21 = {
-  verseNum: 21,
-  english: {
-    text: "Bless the Lord, all you His hosts, You ministers of His, who do His pleasure."
-  },
-  greek: {
-    text: "εὐλογεῖτε τὸν κύριον πᾶσαι αἱ δυνάμεις αὐτοῦ λειτουργοὶ αὐτοῦ ποιοῦντες τὸ θέλημα αὐτοῦ"
-  }
-}
-const VERSE22 = {
-  verseNum: 22,
-  english: {
-    text: "Bless the Lord, all His works, In all places of His dominion. Bless the Lord, O my soul!"
-  },
-  greek: {
-    text: "εὐλογεῖτε τὸν κύριον πάντα τὰ ἔργα αὐτοῦ ἐν παντὶ τόπῳ τῆς δεσποτείας αὐτοῦ εὐλόγει ἡ ψυχή μου τὸν κύριον"
+    text: "Βασιλεύσει Κύριος εἰς τὸν αἰῶνα, ὁ Θεός σου Σιὼν εἰς γενεὰν καὶ γενεάν."
   }
 }
 const OUTRO = {
-  verseNum: 1,
   english: {
     text: 'Bless the Lord, O my soul, And all that is within me, bless His holy name! Bless the Lord!'
   },
   greek: {
     text: 'Εὐλόγει ἡ ψυχή μου, τὸν Κύριον, καὶ πάντα τὰ ἐντός μου, τὸ ὄνομα τὸ ἅγιον αὐτοῦ. εὐλογητὸς εἶ, Κύριε!'
+  }
+}
+const ONLY_BEGOTTEN_SON_AND_LOGOS_OF_GOD = {
+  english: {
+    text: 'Only-begotten Son and Logos of God, being immortal, You condescended for our salvation to take flesh from the holy Theotokos and ever-virgin Mary and, without change, became man. Christ, our God, You were crucified and conquered death by death. Being one of the Holy Trinity, glorified with the Father and the Holy Spirit: Save us.'
+  },
+  greek: {
+    text: 'Ὁ μονογενὴς Υἱὸς καὶ Λόγος τοῦ Θεοῦ, ἀθάνατος ὑπάρχων, καὶ καταδεξάμενος διὰ τὴν ἡμετέραν σωτηρίαν, σαρκωθῆναι ἐκ τῆς Ἁγίας Θεοτόκου καὶ ἀειπαρθένου Μαρίας, ἀτρέπτως ἐνανθρωπήσας, σταυρωθείς τε, Χριστὲ ὁ Θεός, θανάτῳ θάνατον πατήσας, Εἷς ὢν τῆς Ἁγίας Τριάδος συνδοξαζόμενος τῷ Πατρὶ καὶ τῷ Ἁγίῳ Πνεύματι, σῶσον ἡμᾶς. '
   }
 }
 const section = reactive({
@@ -225,43 +133,28 @@ const section = reactive({
     VERSE1,
     VERSE2,
     VERSE3,
-    VERSE4,
+    VERSE4A,
+    VERSE4B,
     VERSE5,
     VERSE6,
     VERSE7,
     VERSE8,
     VERSE9,
     VERSE10,
-    VERSE11,
-    VERSE12,
-    VERSE12,
-    VERSE13,
-    VERSE14,
-    VERSE15,
-    VERSE16,
-    VERSE17,
-    VERSE18,
-    VERSE20,
-    VERSE19,
-    VERSE21,
-    VERSE22,
-    main.GLORIA_PATRI_EE_NOW_AND_EVER_AMEN,
+    main.NOW_AND_EVER_AND_UNTO_AGES_AMEN,
     OUTRO,
+    ONLY_BEGOTTEN_SON_AND_LOGOS_OF_GOD,
+    main.DEACON,
     main.AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY,
     main.LORD_HAVE_MERCY,
     main.HELP_US_SAVE_US,
     main.LORD_HAVE_MERCY,
     main.COMMEMORATING_THE_PANAGIA,
     main.TO_YOU_O_LORD,
-    main.FOR_YOURS_IS_DOMINION_POWER_GLORY,
+    main.FOR_YOU_O_GOD_ARE_GOOD_AND_LOVE_MANKIND,
     main.AMEN
   ]
 });
 </script>
 
-<style scoped>
-.verse {
-  color: red;
-  font-weight: 600;
-}
-</style>
+<style scoped></style>

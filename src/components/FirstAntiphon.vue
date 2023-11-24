@@ -215,7 +215,6 @@ const VERSE22 = {
   }
 }
 const OUTRO = {
-  verseNum: 1,
   english: {
     text: 'Bless the Lord, O my soul, And all that is within me, bless His holy name! Bless the Lord!'
   },
@@ -271,8 +270,4 @@ const section = reactive({
 </script>
 
 <style scoped>
-.verse {
-  color: red;
-  font-weight: 600;
-}
 </style>

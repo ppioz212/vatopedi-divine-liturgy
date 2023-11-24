@@ -69,4 +69,9 @@ defineProps(['section'])
   text-align: left;
   font-weight: 600;
 }
+
+.verse {
+  color: red;
+  font-weight: 600;
+}
 </style>
