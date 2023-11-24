@@ -1,89 +1,49 @@
 import { defineStore } from 'pinia'
+import { actor_factory, text_factory, response_factory } from '@/factories'
 
 const DEACON_ACTOR_ENG = 'DEACON'
 const PRIEST_ACTOR_ENG = 'PRIEST'
 const CHOIR_ACTOR_ENG = 'CHOIR'
 const PEOPLE_ACTOR_ENG = 'PEOPLE'
+const READER_ACTOR_ENG = 'READER'
+
 const DEACON_ACTOR_GREEK = 'ΔΙΑΚΟΝΟΣ'
 const PRIEST_ACTOR_GREEK = 'ΙΕΡΕΥΣ'
 const CHOIR_ACTOR_GREEK = 'ΧΟΡΟΣ'
 const PEOPLE_ACTOR_GREEK = 'ΛΑΟΣ'
+const READER_ACTOR_GREEK = 'ΑΝΑΓΝΩΣΤΗΣ'
+
+export const useActorStore = defineStore('actor', {
+  state: () => {
+    return {
+      PRIEST: actor_factory(PRIEST_ACTOR_ENG, PRIEST_ACTOR_GREEK),
+      DEACON: actor_factory(DEACON_ACTOR_ENG, DEACON_ACTOR_GREEK),
+      CHOIR: actor_factory(CHOIR_ACTOR_ENG, CHOIR_ACTOR_GREEK),
+      PEOPLE: actor_factory(PEOPLE_ACTOR_ENG, PEOPLE_ACTOR_GREEK),
+      READER: actor_factory(READER_ACTOR_ENG, READER_ACTOR_GREEK)
+    }
+  }
+})
+
+export const useResponseStore = defineStore('response', {
+  state: () => {
+    return {
+      LORD_HAVE_MERCY: response_factory('( Lord, have mercy. )', '( Κύριε, ἐλέησον. )'),
+      AMEN: response_factory('( Amen. )', '( Ἀμήν. )'),
+      TO_YOU_O_LORD: response_factory('( To You, O Lord. )', '( Σοί, Κύριε. )'),
+      AND_WITH_YOUR_SPIRIT: response_factory('( And with your spirit. )', '( Καὶ τῷ πνεύματί σου. )')
+    }
+  }
+})
 
 export const useMainStore = defineStore('main', {
   state: () => {
     return {
-      PRIEST: {
-        isActor: true,
-        english: {
-          text: PRIEST_ACTOR_ENG
-        },
-        greek: {
-          text: PRIEST_ACTOR_GREEK
-        }
-      },
-      DEACON: {
-        isActor: true,
-        english: {
-          text: DEACON_ACTOR_ENG
-        },
-        greek: {
-          text: DEACON_ACTOR_GREEK
-        }
-      },
-      CHOIR: {
-        isActor: true,
-        english: {
-          text: CHOIR_ACTOR_ENG
-        },
-        greek: {
-          text: CHOIR_ACTOR_GREEK
-        }
-      },
-      PEOPLE: {
-        isActor: true,
-        english: {
-          text: PEOPLE_ACTOR_ENG
-        },
-        greek: {
-          text: PEOPLE_ACTOR_GREEK
-        }
-      },
-      LORD_HAVE_MERCY: {
-        isItalics: true,
-        english: {
-          text: '( Lord, have mercy. )'
-        },
-        greek: {
-          text: '( Κύριε, ἐλέησον. )'
-        }
-      },
-      AMEN: {
-        isItalics: true,
-        english: {
-          text: '( Amen. )'
-        },
-        greek: {
-          text: '( Ἀμήν. )'
-        }
-      },
-      TO_YOU_O_LORD: {
-        isItalics: true,
-        english: {
-          text: '( To You, O Lord. )'
-        },
-        greek: {
-          text: '( Σοί, Κύριε. )'
-        }
-      },
-      AND_WITH_YOUR_SPIRIT: {
-        isItalics: true,
-        english: {
-          text: '( And with your spirit. )'
-        },
-        greek: {
-          text: '( Καὶ τῷ πνεύματί σου. )'
-        }
-      },
+      LORD_HAVE_MERCY: response_factory('( Lord, have mercy. )', '( Κύριε, ἐλέησον. )'),
+      AMEN: response_factory('( Amen. )', '( Ἀμήν. )'),
+      TO_YOU_O_LORD: response_factory('( To You, O Lord. )', '( Σοί, Κύριε. )'),
+      AND_WITH_YOUR_SPIRIT: response_factory('( And with your spirit. )', '( Καὶ τῷ πνεύματί σου. )'),
+      LET_US_ATTEND: text_factory('Let us be attentive.', 'Πρόσχωμεν.'),
       HELP_US_SAVE_US: {
         english: {
           text: 'Help us, save us, have mercy on us, and protect us, O God, by Your grace.'
@@ -100,14 +60,8 @@ export const useMainStore = defineStore('main', {
           text: 'Τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας μετὰ πάντων τῶν ἁγίων μνημονεύσαντες, ἑαυτοὺς καὶ ἀλλήλους καὶ πᾶσαν τὴν ζωὴν ἡμῶν Χριστῷ τῷ Θεῷ παραθώμεθα.'
         }
       },
-      PEACE_BE_WITH_YOU_ALL: {
-        english: {
-          text: 'Peace be with you all.'
-        },
-        greek: {
-          text: 'Εἰρήνη πᾶσι.'
-        }
-      },
+      PEACE_BE_WITH_YOU_ALL: text_factory('Peace be with you all.', 'Εἰρήνη πᾶσι.'),
+      SOPHIA: text_factory('Wisdom!', 'Σοφίᾳ!'),
       FOR_DELIVERANCE_DANGER: {
         english: {
           text: 'For our deliverance from all affliction, wrath, danger, and distress, let us pray to the Lord.'

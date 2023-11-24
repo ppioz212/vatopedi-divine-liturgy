@@ -59,7 +59,6 @@ defineProps(['section'])
 .liturgy {
   text-align: center;
   margin: 0;
-  /* display: flex; */
 }
 
 .italics {
@@ -74,11 +73,13 @@ defineProps(['section'])
   font-size: 90%;
   color: var(--sub-heading-color);
   text-align: left;
+  font-weight: 600;
 }
 
 .sub-heading,
 .verse {
   color: var(--sub-heading-color);
+  font-weight: 600;
 }
 
 p.hymn::first-letter {

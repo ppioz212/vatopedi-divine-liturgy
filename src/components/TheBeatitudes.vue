@@ -3,49 +3,27 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from '@/store';
+import { useMainStore, useActorStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
+import { verse_factory, hymn_factory, text_factory, subHeading_factory } from '@/factories'
 
 const main = useMainStore()
-function verse_factory(verseNumber: string, englishText: string, greekText: string) {
-  return {
-    verseNum: verseNumber,
-    english: {
-      text: englishText
-    },
-    greek: {
-      text: greekText
-    }
-  };
-}
+const actors = useActorStore()
+const PLAGAL_THE_FOURTH = subHeading_factory(
+  "Plagal the Fourth",
+  "Πλάγιος τοῦ Τετάρτου"
+)
+const IN_YOUR_KINGDOM_REMEMBER_US = text_factory(
+  '*In your Kingdom remember us, Lord, when you come in your Kingdom*',
+  'Ἐν τῇ Βασιλείᾳ σου μνήσθητι ἡμῶν, Κύριε, ὅταν ἔλθῃς ἐν τῇ Βασιλείᾳ σου'
+)
+const MATTHEW_5_SUBHEADING = subHeading_factory(
+  'Matthew 5:3-11',
+  'Ματταθίας 5:3-11'
+)
 function ode_factory(englishText: string, greekText: string) {
-  return {
-    isHymn: true,
-    english: {
-      text: englishText
-    },
-    greek: {
-      text: greekText
-    }
-  };
-}
-const IN_YOUR_KINGDOM_REMEMBER_US = {
-  english: {
-    text: '*In your Kingdom remember us, Lord, when you come in your Kingdom*'
-  },
-  greek: {
-    text: 'Ἐν τῇ Βασιλείᾳ σου μνήσθητι ἡμῶν, Κύριε, ὅταν ἔλθῃς ἐν τῇ Βασιλείᾳ σου'
-  }
-}
-const MATTHEW_5_SUBHEADING = {
-  isSubHeading: true,
-  english: {
-    text: 'Matthew 5:3-11'
-  },
-  greek: {
-    text: 'Ματταθίας 5:3-11'
-  }
+  return hymn_factory(englishText, greekText);
 }
 const ODE_1 = ode_factory(
   "*A long time ago, in the Sinai Despina, a fire burned, and they remained unburnt, Moses the greatest, they exemplified you, Virgin, whom we praise now, O Vimatarissa.*",
@@ -76,7 +54,7 @@ const ODE_7 = ode_factory(
   "Ἵν᾿ ἅπασαν, ὁ Υἱός σου λυτρώσῃ, Βηματάρισσα τὴν βρότειον φύσιν, ἐν τοῖς μυχοῖς, τοῖς τοῦ ᾍδου κατῆλθε, καὶ τὸν Ἀδὰμ παγγενῆ συνανέστησε· σὺ μιμουμένη δὲ Αὐτόν, ἐνοικεῖς τῷ τοῦ φρέατος νάματι."
 )
 const ODE_8 = ode_factory(
-  "Confiscate thy flock, thy flock and thy Virgin, thee pirates, in the midst of slavery, thou hast taken possession and conquered, the life of Crete unblemished, Step of sorrows multitude.",
+  "*Confiscate thy flock, thy flock and thy Virgin, thee pirates, in the midst of slavery, thou hast taken possession and conquered, the life of Crete unblemished, Step of sorrows multitude.*",
   "Κατάσχεσιν τῆς σῆς ποίμνης ἐάσας, ὁ οἰκέτης σου καὶ ἄκων Παρθένε, σὺν πειραταῖς, ἐν ὁδῷ τῆς δουλείας, ἀποδημεῖ καὶ τὴν νῆσον κατέλαβε, τῆς Κρήτης αἰχμάλωτος ζῶν, Βηματάρισσα θλίψεων πλήθεσι."
 )
 const BLESSED_ARE_THE_POOR_IN_SPIRIT = verse_factory("3",
@@ -125,6 +103,7 @@ const section = reactive({
     greek: 'Μακαρισμοί'
   },
   body: [
+    PLAGAL_THE_FOURTH,
     MATTHEW_5_SUBHEADING,
     IN_YOUR_KINGDOM_REMEMBER_US,
     BLESSED_ARE_THE_POOR_IN_SPIRIT,
@@ -132,6 +111,7 @@ const section = reactive({
     BLESSED_ARE_THE_THE_MEEK,
     BLESSED_ARE_THOSE_WHO_HUNGER_AND_THIRST_FOR_RIGHTEOUSNESS,
     BLESSED_ARE_THE_MERCIFUL,
+    actors.CHOIR,
     ODE_1,
     BLESSED_ARE_THE_PURE_IN_HEART,
     ODE_2,

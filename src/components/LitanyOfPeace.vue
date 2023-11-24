@@ -3,11 +3,12 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from '@/store';
+import { useMainStore, useActorStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 
 const main = useMainStore()
+const actors = useActorStore()
 const BLESS_MASTER = {
   english: {
     text: 'Master, give the blessing.'
@@ -95,12 +96,12 @@ const section = reactive({
     greek: 'Εὐλογημένη ἡ Βασιλεία, Εἰρηνικά'
   },
   body: [
-    main.DEACON,
+    actors.DEACON,
     BLESS_MASTER,
-    main.PRIEST,
+    actors.PRIEST,
     BLESSED_IS_THE_KINGDOM,
     main.AMEN,
-    main.DEACON,
+    actors.DEACON,
     IN_PEACE_LET_US_PRAY,
     main.LORD_HAVE_MERCY,
     FOR_THE_PEACE_ABOVE,
@@ -125,7 +126,7 @@ const section = reactive({
     main.LORD_HAVE_MERCY,
     main.COMMEMORATING_THE_PANAGIA,
     main.TO_YOU_O_LORD,
-    main.PRIEST,
+    actors.PRIEST,
     main.FOR_TO_YOU_BELONG_ALL_GLORY_HONOR_WORSHIP,
     main.AMEN
   ]

@@ -4,10 +4,11 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue';
-import { useMainStore } from '@/store';
+import { useMainStore, useActorStore } from '@/store';
 import SectionTemplate from './SectionTemplate.vue';
 
 const main = useMainStore()
+const actors = useActorStore()
 const GRANT_THIS_O_LORD = {
   isItalics: true,
   english: {
@@ -120,7 +121,7 @@ const section = reactive({
     greek: 'Ἀπολυτίκια, εὐχὴ Κολλύβων'
   },
   body: [
-    main.DEACON,
+    actors.DEACON,
     LET_US_COMPLETE_OUR_PRAYER,
     main.LORD_HAVE_MERCY,
     FOR_THE_PRECIOUS_GIFTS,
@@ -132,7 +133,7 @@ const section = reactive({
     main.HELP_US_SAVE_US,
     main.LORD_HAVE_MERCY,
     THAT_THE_WHOLE_DAY_MAY_BE,
-    main.CHOIR,
+    actors.CHOIR,
     GRANT_THIS_O_LORD,
     FOR_AN_ANGEL_OF_PEACE,
     GRANT_THIS_O_LORD,
@@ -146,17 +147,17 @@ const section = reactive({
     GRANT_THIS_O_LORD,
     main.COMMEMORATING_THE_PANAGIA,
     main.TO_YOU_O_LORD,
-    main.PRIEST,
+    actors.PRIEST,
     THROUGH_THE_MERCIES_OF_YOUR_ONLY_BEGOTTEN_SON,
     main.AMEN,
-    main.PRIEST,
+    actors.PRIEST,
     main.PEACE_BE_WITH_YOU_ALL,
     main.AND_WITH_YOUR_SPIRIT,
-    main.DEACON,
+    actors.DEACON,
     LET_US_LOVE_ONE_ANOTHER,
-    main.CHOIR,
+    actors.CHOIR,
     THE_TRINITY_ONE_ESSENCE_UNDIVIDED,
-    main.DEACON,
+    actors.DEACON,
     THE_DOORS_THE_DOORS_OF_WISDOM
   ]
 });

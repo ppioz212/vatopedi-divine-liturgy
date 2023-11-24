@@ -3,11 +3,12 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from '@/store';
+import { useMainStore, useActorStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 
 const main = useMainStore()
+const actors = useActorStore()
 const PSALM_102_SUBHEADING = {
   isSubHeading: true,
   english: {
@@ -238,7 +239,7 @@ const section = reactive({
   },
   body: [
     PSALM_102_SUBHEADING,
-    main.CHOIR,
+    actors.CHOIR,
     INTRO,
     VERSE1,
     VERSE2,
@@ -264,14 +265,14 @@ const section = reactive({
     VERSE22,
     main.GLORIA_PATRI_EE_NOW_AND_EVER_AMEN,
     OUTRO,
-    main.DEACON,
+    actors.DEACON,
     main.AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY,
     main.LORD_HAVE_MERCY,
     main.HELP_US_SAVE_US,
     main.LORD_HAVE_MERCY,
     main.COMMEMORATING_THE_PANAGIA,
     main.TO_YOU_O_LORD,
-    main.PRIEST,
+    actors.PRIEST,
     main.FOR_YOURS_IS_DOMINION_POWER_GLORY,
     main.AMEN
   ]

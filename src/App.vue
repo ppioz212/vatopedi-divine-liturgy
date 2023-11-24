@@ -5,6 +5,7 @@
     <FirstAntiphon />
     <SecondAntiphon />
     <TheBeatitudes />
+    <TheEpistle />
     <LitanyOfCompletion />
   </main>
 </template>
@@ -14,6 +15,7 @@ import LitanyOfPeace from './components/LitanyOfPeace.vue';
 import FirstAntiphon from './components/FirstAntiphon.vue';
 import SecondAntiphon from './components/SecondAntiphon.vue';
 import TheBeatitudes from './components/TheBeatitudes.vue';
+import TheEpistle from './components/TheEpistle.vue';
 import LitanyOfCompletion from './components/LitanyOfCompletion.vue';
 
 </script>
@@ -22,6 +24,7 @@ import LitanyOfCompletion from './components/LitanyOfCompletion.vue';
 :root {
   --section-heading: brown;
 }
+
 body {
   margin: 0;
   background-color: beige;
