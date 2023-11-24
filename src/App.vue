@@ -3,16 +3,19 @@
     <h1>Thia Litourgia by Choir of Vatopedi Fathers</h1>
     <LitanyOfPeace />
     <FirstAntiphon />
-    <SecondAntiphon/>
-    <SectionFourteenPlirotika />
+    <SecondAntiphon />
+    <TheBeatitudes />
+    <LitanyOfCompletion />
   </main>
 </template>
 
 <script setup lang="ts">
 import LitanyOfPeace from './components/LitanyOfPeace.vue';
-import SectionFourteenPlirotika from './components/LitanyOfCompletion.vue';
 import FirstAntiphon from './components/FirstAntiphon.vue';
 import SecondAntiphon from './components/SecondAntiphon.vue';
+import TheBeatitudes from './components/TheBeatitudes.vue';
+import LitanyOfCompletion from './components/LitanyOfCompletion.vue';
+
 </script>
 
 <style>

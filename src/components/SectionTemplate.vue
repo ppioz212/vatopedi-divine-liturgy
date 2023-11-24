@@ -10,13 +10,15 @@
     </div>
     <div class="body" v-for="(element, index) in section.body" :key="index">
       <div class="greek">
-        <p class="text" :class="{ italics: element.isItalics, actor: element.isActor }">
+        <p class="text"
+          :class="{ italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading }">
           <span v-show="element.verseNum != null" class="verse">Στίχος {{ element.verseNum }}: </span>
           {{ element.greek.text }}
         </p>
       </div>
       <div class="english">
-        <p class="text" :class="{ italics: element.isItalics, actor: element.isActor }">
+        <p class="text"
+          :class="{ italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading }">
           <span v-show="element.verseNum != null" class="verse">Verse {{ element.verseNum }}: </span>
           {{ element.english.text }}
         </p>
@@ -67,11 +69,14 @@ defineProps(['section'])
 .actor {
   color: red;
   text-align: left;
-  font-weight: 600;
 }
 
 .verse {
   color: red;
   font-weight: 600;
+}
+
+.sub-heading {
+  color: red;
 }
 </style>

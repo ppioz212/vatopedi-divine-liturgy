@@ -7,7 +7,15 @@ import { useMainStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 const main = useMainStore()
-
+const PSALM_102_SUBHEADING = {
+  isSubHeading: true,
+  english: {
+    text: 'Psalm 102 (103)'
+  },
+  greek: {
+    text: 'Ψαλμὸς 102 (103)'
+  }
+}
 const INTRO = {
   english: {
     text: 'Bless the Lord, O my soul, Bless the Lord!'
@@ -228,6 +236,7 @@ const section = reactive({
     greek: 'Α΄ Στάσις Τυπικῶν'
   },
   body: [
+    PSALM_102_SUBHEADING,
     main.CHOIR,
     INTRO,
     VERSE1,
@@ -242,15 +251,14 @@ const section = reactive({
     VERSE10,
     VERSE11,
     VERSE12,
-    VERSE12,
     VERSE13,
     VERSE14,
     VERSE15,
     VERSE16,
     VERSE17,
     VERSE18,
-    VERSE20,
     VERSE19,
+    VERSE20,
     VERSE21,
     VERSE22,
     main.GLORIA_PATRI_EE_NOW_AND_EVER_AMEN,
@@ -269,5 +277,4 @@ const section = reactive({
 });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
