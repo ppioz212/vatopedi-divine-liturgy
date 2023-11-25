@@ -62,6 +62,7 @@ export const useMainStore = defineStore('main', {
       },
       PEACE_BE_WITH_YOU_ALL: text_factory('Peace be with you all.', 'Εἰρήνη πᾶσι.'),
       SOPHIA: text_factory('Wisdom!', 'Σοφίᾳ!'),
+      PEACE_BE_WITH_YOU: text_factory('Peace be with you.', 'Εἰρήνη σοί.'),
       FOR_DELIVERANCE_DANGER: {
         english: {
           text: 'For our deliverance from all affliction, wrath, danger, and distress, let us pray to the Lord.'

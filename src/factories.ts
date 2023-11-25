@@ -38,3 +38,9 @@ export function hymn_factory(englishText: string, greekText: string): object {
   generalText.isHymn = true
   return generalText
 }
+
+export function chap_verse_factory(englishText: string, greekText: string): object {
+  const generalText = text_factory(englishText, greekText)
+  generalText.isChapVerse = true
+  return generalText
+}
