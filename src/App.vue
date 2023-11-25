@@ -5,6 +5,9 @@
     <FirstAntiphon />
     <SecondAntiphon />
     <TheBeatitudes />
+    <SmallEntrance />
+    <TrisagionHymn />
+    <DynamisTrisagionHymn />
     <TheEpistle />
     <AlleluiaChant />
     <LitanyOfCompletion />
@@ -19,6 +22,9 @@ import SecondAntiphon from './components/SecondAntiphon.vue';
 import TheBeatitudes from './components/TheBeatitudes.vue';
 import TheEpistle from './components/TheEpistle.vue';
 import AlleluiaChant from './components/AlleluiaChant.vue';
+import SmallEntrance from './components/SmallEntrance.vue';
+import TrisagionHymn from './components/TrisagionHymn.vue';
+import DynamisTrisagionHymn from './components/DynamisTrisagionHymn.vue';
 import LitanyOfCompletion from './components/LitanyOfCompletion.vue';
 import TheSymbolOfFaith from './components/TheSymbolOfFaith.vue';
 

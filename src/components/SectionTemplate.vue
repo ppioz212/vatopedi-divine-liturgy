@@ -87,6 +87,11 @@ defineProps(['section'])
   font-weight: 600;
 }
 
+.sub-heading {
+  text-align: center;
+  text-indent: 0;
+}
+
 .hymn {
   text-indent: 0;
 }
@@ -104,5 +109,7 @@ defineProps(['section'])
   font-style: italic;
   color: var(--sub-heading-color);
   font-size: 85%;
+  text-align: center;
+  text-indent: 0;
 }
 </style>

@@ -31,10 +31,7 @@ export const useResponseStore = defineStore('response', {
       LORD_HAVE_MERCY: response_factory('( Lord, have mercy. )', '( Κύριε, ἐλέησον. )'),
       AMEN: response_factory('( Amen. )', '( Ἀμήν. )'),
       TO_YOU_O_LORD: response_factory('( To You, O Lord. )', '( Σοί, Κύριε. )'),
-      AND_WITH_YOUR_SPIRIT: response_factory(
-        '( And with your spirit. )',
-        '( Καὶ τῷ πνεύματί σου. )'
-      )
+      AND_WITH_YOUR_SPIRIT: response_factory('( And with your spirit. )', '( Καὶ τῷ πνεύματί σου. )')
     }
   }
 })
@@ -45,8 +42,12 @@ export const useMainStore = defineStore('main', {
       LORD_HAVE_MERCY: response_factory('( Lord, have mercy. )', '( Κύριε, ἐλέησον. )'),
       AMEN: response_factory('( Amen. )', '( Ἀμήν. )'),
       TO_YOU_O_LORD: response_factory('( To You, O Lord. )', '( Σοί, Κύριε. )'),
-      AND_WITH_YOUR_SPIRIT: response_factory('( And with your spirit. )', '( Καὶ τῷ πνεύματί σου. )'),
+      AND_WITH_YOUR_SPIRIT: response_factory(
+        '( And with your spirit. )',
+        '( Καὶ τῷ πνεύματί σου. )'
+      ),
       LET_US_ATTEND: text_factory('Let us be attentive.', 'Πρόσχωμεν.'),
+      LET_US_PRAY_TO_THE_LORD: text_factory('Let us pray to the Lord.', 'Τοῦ Κυρίου δεηθῶμεν.'),
       HELP_US_SAVE_US: {
         english: {
           text: 'Help us, save us, have mercy on us, and protect us, O God, by Your grace.'
@@ -107,6 +108,10 @@ export const useMainStore = defineStore('main', {
           text: 'Ὅτι ἀγαθὸς καὶ φιλάνθρωπος Θεὸς ὑπάρχεις καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
         }
       },
+      FOR_YOU_OUR_GOD_ARE_HOLY_AND_OFFER_GLORY: text_factory(
+        'For You, our God, are holy, and to You we offer up glory, to the Father and to the Son and to the Holy Spirit, now and forever...',
+        'Ὅτι ἅγιος εἶ, ὁ Θεὸς ἡμῶν, καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεί…'
+      ),
       GLORIA_PATRI_EE_NOW_AND_EVER_AMEN: {
         english: {
           text: 'Glory to the Father and to the Son and to the Holy Spirit. Now and forever and to the ages of ages. Amen.'
@@ -123,6 +128,10 @@ export const useMainStore = defineStore('main', {
           text: 'Δόξα τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι.'
         }
       },
+      AND_UNTO_AGES_OF_AGES: text_factory(
+        "And to the ages of ages.",
+        "καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
+      ),
       NOW_AND_EVER_AND_UNTO_AGES_AMEN: {
         english: {
           text: 'Now and forever and to the ages of ages. Amen.'
