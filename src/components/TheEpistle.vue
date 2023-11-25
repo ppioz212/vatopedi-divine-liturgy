@@ -15,11 +15,11 @@ const PROKEIMENON_PROUNOUNCEMENT = text_factory(
   "Προκείμενον τοῦ Ἀποστόλου ἦχος Τρίτος"
 )
 const PROKEIMENON_INTRO = text_factory(
-  "*My soul magnifies the Lord*",
+  "My soul magnifies the Lord",
   "Μεγαλύνει ἡ ψυχή μου τὸν Κύριον."
 )
 const PROKEIMENON_OF_THE_EPISTLE = hymn_factory(
-  "*My soul magnifies the Lord, and my spirit rejoices in God my Saviour.*",
+  "My soul magnifies the Lord, and my spirit rejoices in my God my Saviour.",
   "Μεγαλύνει ἡ ψυχή μου τὸν Κύριον, καὶ ἠγαλλίασε τὸ πνεῦμα μου ἐπὶ τῷ Θεῷ τῷ Σωτῆρί μου."
 )
 const HYMN_RESPONSE = text_factory(

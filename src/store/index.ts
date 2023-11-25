@@ -31,7 +31,10 @@ export const useResponseStore = defineStore('response', {
       LORD_HAVE_MERCY: response_factory('( Lord, have mercy. )', '( Κύριε, ἐλέησον. )'),
       AMEN: response_factory('( Amen. )', '( Ἀμήν. )'),
       TO_YOU_O_LORD: response_factory('( To You, O Lord. )', '( Σοί, Κύριε. )'),
-      AND_WITH_YOUR_SPIRIT: response_factory('( And with your spirit. )', '( Καὶ τῷ πνεύματί σου. )')
+      AND_WITH_YOUR_SPIRIT: response_factory(
+        '( And with your spirit. )',
+        '( Καὶ τῷ πνεύματί σου. )'
+      )
     }
   }
 })
@@ -63,6 +66,7 @@ export const useMainStore = defineStore('main', {
       PEACE_BE_WITH_YOU_ALL: text_factory('Peace be with you all.', 'Εἰρήνη πᾶσι.'),
       SOPHIA: text_factory('Wisdom!', 'Σοφίᾳ!'),
       PEACE_BE_WITH_YOU: text_factory('Peace be with you.', 'Εἰρήνη σοί.'),
+      SOPHIA_ARISE: text_factory('Wisdom. Arise.', 'Σοφία. Ὀρθοί.'),
       FOR_DELIVERANCE_DANGER: {
         english: {
           text: 'For our deliverance from all affliction, wrath, danger, and distress, let us pray to the Lord.'

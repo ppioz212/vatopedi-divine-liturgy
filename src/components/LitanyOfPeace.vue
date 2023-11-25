@@ -67,10 +67,10 @@ const FOR_OUR_COUNTRY_PRES = {
 }
 const FOR_OUR_ARCHDIOCESE = {
   english: {
-    text: 'Ὑπὲρ τῆς Ἁγίας τοῦ Χριστοῦ Μεγάλης Ἐκκλησίας, τῆς Ἱερᾶς ἡμῶν Ἀρχιεπισκοπῆς, [τῆς Ἱερᾶς Μητροπόλεως ταύτης,] τῆς πόλεως καὶ κοινότητος ταύτης, πάσης πόλεως, χώρας καὶ τῶν πίστει οἰκούντων ἐν αὐταῖς, τοῦ Κυρίου δεηθῶμεν.'
+    text: 'For the Holy and Great Church of Christ, for our Sacred Archdiocese, [for this Sacred Metropolis,] for this city and parish, for every city and land, and for the faithful who live in them, let us pray to the Lord.'
   },
   greek: {
-    text: 'For the Holy and Great Church of Christ, for our Sacred Archdiocese, [for this Sacred Metropolis,] for this city and parish, for every city and land, and for the faithful who live in them, let us pray to the Lord.'
+    text: 'Ὑπὲρ τῆς Ἁγίας τοῦ Χριστοῦ Μεγάλης Ἐκκλησίας, τῆς Ἱερᾶς ἡμῶν Ἀρχιεπισκοπῆς, [τῆς Ἱερᾶς Μητροπόλεως ταύτης,] τῆς πόλεως καὶ κοινότητος ταύτης, πάσης πόλεως, χώρας καὶ τῶν πίστει οἰκούντων ἐν αὐταῖς, τοῦ Κυρίου δεηθῶμεν.'
   }
 }
 const FOR_FAVORABLE_WEATHER = {

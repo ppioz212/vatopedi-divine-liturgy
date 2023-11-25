@@ -36,7 +36,7 @@ defineProps(['section'])
   --sub-heading-color: red;
 }
 
-.body p {
+.body .text {
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -45,13 +45,15 @@ defineProps(['section'])
   border-right: 1px solid black;
 }
 
-.liturgy>div {
+.liturgy>.header,
+.liturgy>.body {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.liturgy div>div {
+.liturgy .greek,
+.liturgy .english {
   width: 50%;
   padding: 0 5px;
 }
@@ -67,6 +69,8 @@ defineProps(['section'])
 
 .text {
   font-weight: 600;
+  text-indent: 10%;
+  text-align: left;
 }
 
 .actor {
@@ -74,12 +78,17 @@ defineProps(['section'])
   color: var(--sub-heading-color);
   text-align: left;
   font-weight: 600;
+  text-indent: 0;
 }
 
 .sub-heading,
 .verse {
   color: var(--sub-heading-color);
   font-weight: 600;
+}
+
+.hymn {
+  text-indent: 0;
 }
 
 .hymn::first-letter {

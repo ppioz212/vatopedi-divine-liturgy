@@ -6,6 +6,7 @@
     <SecondAntiphon />
     <TheBeatitudes />
     <TheEpistle />
+    <AlleluiaChant />
     <LitanyOfCompletion />
     <TheSymbolOfFaith />
   </main>
@@ -17,6 +18,7 @@ import FirstAntiphon from './components/FirstAntiphon.vue';
 import SecondAntiphon from './components/SecondAntiphon.vue';
 import TheBeatitudes from './components/TheBeatitudes.vue';
 import TheEpistle from './components/TheEpistle.vue';
+import AlleluiaChant from './components/AlleluiaChant.vue';
 import LitanyOfCompletion from './components/LitanyOfCompletion.vue';
 import TheSymbolOfFaith from './components/TheSymbolOfFaith.vue';
 

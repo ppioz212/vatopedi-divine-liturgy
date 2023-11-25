@@ -15,10 +15,12 @@ const I_BELIEVE_IN_ONE_GOD = text_factory(
 )
 const AND_IN_THE_HOLY_SPIRIT = text_factory(
   "And in the Holy Spirit, the Lord, the Giver of life, Who proceeds from the Father, Who together with the Father and the Son is worshiped and glorified, Who spoke by the prophets.",
-  "Καὶ εἰς τὸ Πνεῦμα τὸ ἅγιον, τὸ Κύριον, τὸ ζωοποιόν, τὸ ἐκ τοῦ Πατρὸς ἐκπορευόμενον, τὸ σὺν Πατρὶ καὶ Υἱῷ συμπροσκυνούμενον καὶ συνδοξαζόμενον, τὸ λαλῆσαν διὰ τῶν προφητῶν.")
+  "Καὶ εἰς τὸ Πνεῦμα τὸ ἅγιον, τὸ Κύριον, τὸ ζωοποιόν, τὸ ἐκ τοῦ Πατρὸς ἐκπορευόμενον, τὸ σὺν Πατρὶ καὶ Υἱῷ συμπροσκυνούμενον καὶ συνδοξαζόμενον, τὸ λαλῆσαν διὰ τῶν προφητῶν."
+)
 const AND_IN_ONE_HOLY_CATHOLIC_AND_APOSTOLIC_CHURCH = text_factory(
   "And in one, holy, catholic, and apostolic Church. I confess one baptism for the remission of sins. I look for the resurrection of the dead, and the life of the age to come.",
-  "Εἰς μίαν, ἁγίαν, καθολικὴν καὶ ἀποστολικὴν Ἐκκλησίαν. Ὁμολογῶ ἓν βάπτισμα εἰς ἄφεσιν ἁμαρτιῶν. Προσδοκῶ ἀνάστασιν νεκρῶν. Καὶ ζωὴν τοῦ μέλλοντος αἰῶνος.")
+  "Εἰς μίαν, ἁγίαν, καθολικὴν καὶ ἀποστολικὴν Ἐκκλησίαν. Ὁμολογῶ ἓν βάπτισμα εἰς ἄφεσιν ἁμαρτιῶν. Προσδοκῶ ἀνάστασιν νεκρῶν. Καὶ ζωὴν τοῦ μέλλοντος αἰῶνος."
+)
 const section = reactive({
   title: {
     english: 'The Symbol Of Faith',
