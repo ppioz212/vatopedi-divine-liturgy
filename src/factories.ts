@@ -1,46 +1,35 @@
-export function text_factory(englishText: string, greekText: string): object {
+export function text_factory(englishText: string, greekText: string, obj = {}): object {
   return {
     english: {
       text: englishText
     },
     greek: {
       text: greekText
-    }
+    },
+    ...obj
   }
 }
 
 export function response_factory(englishText: string, greekText: string): object {
-  const generalText = text_factory(englishText, greekText)
-  generalText.isItalics = true
-  return generalText
+  return text_factory(englishText, greekText, { isItalics: true })
 }
 
 export function actor_factory(englishText: string, greekText: string): object {
-  const generalText = text_factory(englishText, greekText)
-  generalText.isActor = true
-  return generalText
+  return text_factory(englishText, greekText, { isActor: true })
 }
 
 export function verse_factory(verseNumber: string, englishText: string, greekText: string): object {
-  const generalText = text_factory(englishText, greekText)
-  generalText.verseNum = verseNumber
-  return generalText
+  return text_factory(englishText, greekText, { verseNum: verseNumber })
 }
 
 export function subHeading_factory(englishText: string, greekText: string): object {
-  const generalText = text_factory(englishText, greekText)
-  generalText.isSubHeading = true
-  return generalText
+  return text_factory(englishText, greekText, { isSubHeading: true })
 }
 
 export function hymn_factory(englishText: string, greekText: string): object {
-  const generalText = text_factory(englishText, greekText)
-  generalText.isHymn = true
-  return generalText
+  return text_factory(englishText, greekText, { isHymn: true })
 }
 
 export function chap_verse_factory(englishText: string, greekText: string): object {
-  const generalText = text_factory(englishText, greekText)
-  generalText.isChapVerse = true
-  return generalText
+  return text_factory(englishText, greekText, { isChapVerse: true })
 }

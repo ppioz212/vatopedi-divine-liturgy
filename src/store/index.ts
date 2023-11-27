@@ -31,7 +31,18 @@ export const useResponseStore = defineStore('response', {
       LORD_HAVE_MERCY: response_factory('( Lord, have mercy. )', '( Κύριε, ἐλέησον. )'),
       AMEN: response_factory('( Amen. )', '( Ἀμήν. )'),
       TO_YOU_O_LORD: response_factory('( To You, O Lord. )', '( Σοί, Κύριε. )'),
-      AND_WITH_YOUR_SPIRIT: response_factory('( And with your spirit. )', '( Καὶ τῷ πνεύματί σου. )')
+      AND_WITH_YOUR_SPIRIT: response_factory(
+        '( And with your spirit. )',
+        '( Καὶ τῷ πνεύματί σου. )'
+      ),
+      GLORY_TO_YOU_O_LORD_GLORY_TO_YOU: response_factory(
+        '( Glory to you O Lord, Glory to You. )',
+        '( Δόξα σοι, Κύριε, δόξα σοι. )'
+      ),
+      LORD_HAVE_MERCY_X3: response_factory(
+        '( Lord have mercy, Lord have mercy, Lord have mercy. )',
+        '( Κύριε ἐλέησον, Κύριε ἐλέησον, Κύριε ἐλέησον. )'
+      )
     }
   }
 })
@@ -108,9 +119,17 @@ export const useMainStore = defineStore('main', {
           text: 'Ὅτι ἀγαθὸς καὶ φιλάνθρωπος Θεὸς ὑπάρχεις καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
         }
       },
+      FOR_YOU_O_GOD_ARE_MERCIFUL_AND_LOVE_MANKIND: text_factory(
+        'For You, O God, are merciful and love mankind, and to You we offer glory, to the Father and to the Son and to the Holy Spirit, now and forever, and to the ages of ages.',
+        'Ὅτι ἐλεήμων καὶ φιλάνθρωπος Θεὸς ὑπάρχεις καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
+      ),
       FOR_YOU_OUR_GOD_ARE_HOLY_AND_OFFER_GLORY: text_factory(
         'For You, our God, are holy, and to You we offer up glory, to the Father and to the Son and to the Holy Spirit, now and forever...',
         'Ὅτι ἅγιος εἶ, ὁ Θεὸς ἡμῶν, καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεί…'
+      ),
+      THAT_EVER_GUARDED_BY_YOUR_MIGHT: text_factory(
+        'That, ever guarded by Your might, we may ascribe glory to You, to the Father and to the Son and to the Holy Spirit, now and forever and to the ages of ages.',
+        'Ὅπως ὑπὸ τοῦ κράτους σου πάντοτε φυλαττόμενοι, σοὶ δόξαν ἀναπέμπωμεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
       ),
       GLORIA_PATRI_EE_NOW_AND_EVER_AMEN: {
         english: {
@@ -129,8 +148,8 @@ export const useMainStore = defineStore('main', {
         }
       },
       AND_UNTO_AGES_OF_AGES: text_factory(
-        "And to the ages of ages.",
-        "καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
+        'And to the ages of ages.',
+        'καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
       ),
       NOW_AND_EVER_AND_UNTO_AGES_AMEN: {
         english: {

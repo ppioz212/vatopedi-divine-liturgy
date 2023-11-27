@@ -1,6 +1,7 @@
 <template>
   <main>
     <h1>Thia Litourgia by Choir of Vatopedi Fathers</h1>
+    <a href="#alleluia">Alleluia</a>
     <LitanyOfPeace />
     <FirstAntiphon />
     <SecondAntiphon />
@@ -10,6 +11,9 @@
     <DynamisTrisagionHymn />
     <TheEpistle />
     <AlleluiaChant />
+    <TheGospel />
+    <TheLitanyOfSupplicationAndCatechumens />
+    <CherubicHymn />
     <LitanyOfCompletion />
     <TheSymbolOfFaith />
   </main>
@@ -20,11 +24,14 @@ import LitanyOfPeace from './components/LitanyOfPeace.vue';
 import FirstAntiphon from './components/FirstAntiphon.vue';
 import SecondAntiphon from './components/SecondAntiphon.vue';
 import TheBeatitudes from './components/TheBeatitudes.vue';
-import TheEpistle from './components/TheEpistle.vue';
-import AlleluiaChant from './components/AlleluiaChant.vue';
 import SmallEntrance from './components/SmallEntrance.vue';
 import TrisagionHymn from './components/TrisagionHymn.vue';
 import DynamisTrisagionHymn from './components/DynamisTrisagionHymn.vue';
+import TheEpistle from './components/TheEpistle.vue';
+import AlleluiaChant from './components/AlleluiaChant.vue';
+import TheGospel from './components/TheGospel.vue';
+import TheLitanyOfSupplicationAndCatechumens from './components/TheLitanyOfSupplicationAndCatechumens.vue';
+import CherubicHymn from './components/CherubicHymn.vue';
 import LitanyOfCompletion from './components/LitanyOfCompletion.vue';
 import TheSymbolOfFaith from './components/TheSymbolOfFaith.vue';
 
