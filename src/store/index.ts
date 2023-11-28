@@ -17,6 +17,10 @@ export const useActorStore = defineStore('actor', {
   state: () => {
     return {
       PRIEST: actor_factory(PRIEST_ACTOR_ENG, PRIEST_ACTOR_GREEK),
+      LOW_VOICE_PRIEST: actor_factory(
+        `${PRIEST_ACTOR_ENG} (in a low voice)`,
+        `${PRIEST_ACTOR_ENG} (in a low voice)`
+      ),
       DEACON: actor_factory(DEACON_ACTOR_ENG, DEACON_ACTOR_GREEK),
       CHOIR: actor_factory(CHOIR_ACTOR_ENG, CHOIR_ACTOR_GREEK),
       PEOPLE: actor_factory(PEOPLE_ACTOR_ENG, PEOPLE_ACTOR_GREEK),

@@ -3,24 +3,28 @@
     <div class="header">
       <div class="greek">
         <h2> {{ section.title.greek }}</h2>
-        <section-subheadings :section="section"></section-subheadings>
-      </div>  
+        <!-- <section-subheadings :section="section"></section-subheadings> -->
+      </div>
       <div class="english">
         <h2>{{ section.title.english }}</h2>
-        <section-subheadings :section="section"></section-subheadings>
+        <!-- <section-subheadings :section="section"></section-subheadings> -->
       </div>
     </div>
     <div class="body" v-for="(element, index) in section.body" :key="index">
       <div class="greek">
-        <p class="text"
-          :class="{ italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading, hymn: element.isHymn, 'chap-verse': element.isChapVerse }">
+        <p class="text" :class="{
+          italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading,
+          hymn: element.isHymn, 'chap-verse': element.isChapVerse, 'inaudible': element.isInaudible
+        }">
           <span v-show="element.verseNum != null" class="verse">Στίχος {{ element.verseNum }}: </span>
           {{ element.greek.text }}
         </p>
       </div>
       <div class="english">
-        <p class="text"
-          :class="{ italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading, hymn: element.isHymn, 'chap-verse': element.isChapVerse }">
+        <p class="text" :class="{
+          italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading,
+          hymn: element.isHymn, 'chap-verse': element.isChapVerse, 'inaudible': element.isInaudible
+        }">
           <span v-show="element.verseNum != null" class="verse">Verse {{ element.verseNum }}: </span>
           {{ element.english.text }}
         </p>
@@ -30,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import SectionSubheadings from './SectionSubheadings.vue';
+// import SectionSubheadings from './SectionSubheadings.vue';
 defineProps(['section'])
 </script>
 
@@ -114,5 +118,9 @@ defineProps(['section'])
   font-size: 85%;
   text-align: center;
   text-indent: 0;
+}
+
+.inaudible {
+  font-size: 80%;
 }
 </style>

@@ -10,6 +10,10 @@ export function text_factory(englishText: string, greekText: string, obj = {}): 
   }
 }
 
+export function low_voice_factory(englishText: string, greekText: string): object {
+  return text_factory(englishText, greekText, { isInaudible: true })
+}
+
 export function response_factory(englishText: string, greekText: string): object {
   return text_factory(englishText, greekText, { isItalics: true })
 }

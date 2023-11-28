@@ -16,6 +16,9 @@
     <CherubicHymn />
     <LitanyOfCompletion />
     <TheSymbolOfFaith />
+    <holy-anaphora></holy-anaphora>
+    <axion-estin></axion-estin>
+    <recieve-the-cup></recieve-the-cup>
   </main>
 </template>
 
@@ -34,6 +37,9 @@ import TheLitanyOfSupplicationAndCatechumens from './components/TheLitanyOfSuppl
 import CherubicHymn from './components/CherubicHymn.vue';
 import LitanyOfCompletion from './components/LitanyOfCompletion.vue';
 import TheSymbolOfFaith from './components/TheSymbolOfFaith.vue';
+import HolyAnaphora from './components/HolyAnaphora.vue';
+import AxionEstin from './components/AxionEstin.vue';
+import RecieveTheCup from './components/RecieveTheCup.vue'
 
 </script>
 
