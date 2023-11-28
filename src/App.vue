@@ -41,7 +41,7 @@ import TheSymbolOfFaith from './components/TheSymbolOfFaith.vue';
 :root {
   --heading: black;
   --section-heading: brown;
-  --app-background: beige;
+  --app-background: rgb(248, 236, 228);
 }
 
 h1 {

@@ -95,6 +95,8 @@ const section = reactive({
     english: 'The Litany Of Peace',
     greek: 'Εὐλογημένη ἡ Βασιλεία, Εἰρηνικά'
   },
+  spotify: 'https://open.spotify.com/track/34gEU7nHzgLOSXr2ISRkEz?si=6210ee56563946f8',
+  youtube: 'https://www.youtube.com/watch?v=WOpUest3i6E&list=PLCwMICR-aqghkeMZ9vTS_sz3pTtxF054p&index=1',
   body: [
     actors.DEACON,
     BLESS_MASTER,

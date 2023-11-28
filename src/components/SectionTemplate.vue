@@ -3,9 +3,11 @@
     <div class="header">
       <div class="greek">
         <h2> {{ section.title.greek }}</h2>
-      </div>
+        <section-subheadings :section="section"></section-subheadings>
+      </div>  
       <div class="english">
         <h2>{{ section.title.english }}</h2>
+        <section-subheadings :section="section"></section-subheadings>
       </div>
     </div>
     <div class="body" v-for="(element, index) in section.body" :key="index">
@@ -28,6 +30,7 @@
 </template>
 
 <script setup lang="ts">
+import SectionSubheadings from './SectionSubheadings.vue';
 defineProps(['section'])
 </script>
 
