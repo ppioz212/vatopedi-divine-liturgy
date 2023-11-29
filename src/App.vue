@@ -19,6 +19,7 @@
     <holy-anaphora></holy-anaphora>
     <axion-estin></axion-estin>
     <recieve-the-cup></recieve-the-cup>
+    <final-litany></final-litany>
   </main>
 </template>
 
@@ -40,6 +41,7 @@ import TheSymbolOfFaith from './components/TheSymbolOfFaith.vue';
 import HolyAnaphora from './components/HolyAnaphora.vue';
 import AxionEstin from './components/AxionEstin.vue';
 import RecieveTheCup from './components/RecieveTheCup.vue'
+import FinalLitany from './components/FinalLitany.vue'
 
 </script>
 

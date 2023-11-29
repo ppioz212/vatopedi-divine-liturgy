@@ -22,10 +22,6 @@ const THE_GRACE_OF_OUR_LORD_JESUS_CHRIST = text_factory(
   'The grace of our Lord Jesus Christ, and the love of God and Father, and the communion of the Holy Spirit, be with you all.',
   'Ἡ χάρις τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ καὶ ἡ ἀγάπη τοῦ Θεοῦ καὶ Πατρὸς καὶ ἡ κοινωνία τοῦ ἁγίου Πνεύματος εἴη μετὰ πάντων ὑμῶν.'
 )
-const AND_WITH_YOUR_SPIRIT = text_factory(
-  'And with your spirit.',
-  'Καὶ μετὰ τοῦ πνεύματός σου.'
-)
 const LET_US_LIFT_UP_OUR_HEARTS = text_factory(
   'Let us lift up our hearts.',
   'Ἄνω σχῶμεν τὰς καρδίας.'
@@ -95,7 +91,7 @@ const section = reactive({
     actors.PRIEST, LET_US_STAND_ARIGHT,
     actors.CHOIR, A_MERCY_OF_PEACE,
     actors.PRIEST, THE_GRACE_OF_OUR_LORD_JESUS_CHRIST,
-    actors.CHOIR, AND_WITH_YOUR_SPIRIT,
+    actors.CHOIR, responses.AND_WITH_YOUR_SPIRIT_TOU,
     actors.PRIEST, LET_US_LIFT_UP_OUR_HEARTS,
     actors.CHOIR, we_lift_them_upto_the_lord,
     actors.PRIEST, let_give_thanks_unto_the_lord,
