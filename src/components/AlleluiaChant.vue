@@ -1,5 +1,5 @@
 <template>
-  <SectionTemplate id="alleluia" :section="section" />
+  <SectionTemplate id="alleluia-chant" :section="section" />
 </template>
 
 <script setup lang="ts">

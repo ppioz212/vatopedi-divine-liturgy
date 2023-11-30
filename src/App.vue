@@ -1,25 +1,48 @@
 <template>
   <main>
     <h1>Thia Litourgia by Choir of Vatopedi Fathers</h1>
-    <a href="#alleluia">Alleluia</a>
-    <LitanyOfPeace />
-    <FirstAntiphon />
-    <SecondAntiphon />
-    <TheBeatitudes />
-    <SmallEntrance />
-    <TrisagionHymn />
-    <DynamisTrisagionHymn />
-    <TheEpistle />
-    <AlleluiaChant />
-    <TheGospel />
-    <TheLitanyOfSupplicationAndCatechumens />
-    <CherubicHymn />
-    <LitanyOfCompletion />
-    <TheSymbolOfFaith />
-    <holy-anaphora></holy-anaphora>
-    <axion-estin></axion-estin>
-    <recieve-the-cup></recieve-the-cup>
-    <final-litany></final-litany>
+    <div>
+      <nav>
+        <a href="#litany-of-peace">Litany of Peace</a>
+        <a href="#first-antiphon">First Antiphon</a>
+        <a href="#second-antiphon">Second Antiphon</a>
+        <a href="#the-beatitudes">The Beatitudes</a>
+        <a href="#small-entrance">Small Entrance</a>
+        <a href="#trisagion-hymn">Trisagion Hymn</a>
+        <a href="#dynamis-trisagion-hymn">Dynamis Trisagion Hymn</a>
+        <a href="#the-epistle">The Epistle</a>
+        <a href="#alleluia-chant">Alleluia Chant</a>
+        <a href="#the-gospel">The Gospel</a>
+        <a href="#the-litany-of-supplication-and-catechumens">The Litany of Supplication and Catechumens</a>
+        <a href="#cherubic-hymn">Cherubic Hymn</a>
+        <a href="#litany-of-completion">Litany of Completion</a>
+        <a href="#the-symbol-of-faith">The Symbol of Faith</a>
+        <a href="#holy-anaphora">Holy Anaphora</a>
+        <a href="#axion-estin">Axion Estin</a>
+        <a href="#recieve-the-cup">Recieve the Cup</a>
+        <a href="#final-litany">Final Litany</a>
+      </nav>
+      <body>
+        <LitanyOfPeace />
+        <FirstAntiphon />
+        <SecondAntiphon />
+        <TheBeatitudes />
+        <SmallEntrance />
+        <TrisagionHymn />
+        <DynamisTrisagionHymn />
+        <TheEpistle />
+        <AlleluiaChant />
+        <TheGospel />
+        <TheLitanyOfSupplicationAndCatechumens />
+        <CherubicHymn />
+        <LitanyOfCompletion />
+        <TheSymbolOfFaith />
+        <holy-anaphora></holy-anaphora>
+        <axion-estin></axion-estin>
+        <recieve-the-cup></recieve-the-cup>
+        <final-litany></final-litany>
+      </body>
+    </div>
   </main>
 </template>
 
