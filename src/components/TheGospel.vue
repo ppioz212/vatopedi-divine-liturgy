@@ -13,7 +13,7 @@ const actors = useActorStore()
 const responses = useResponseStore()
 const SOPHIA_LET_US_HEAR_THE_GOSPEL = text_factory(
   "Widsom. Arise. Let us hear the Holy Gospel.",
-  "Μεγαλύνει ἡ ψυχή μου τὸν Κύριον."
+  "Σοφίᾳ· ὀρθοί· ἀκούσωμεν τοῦ ἁγίου Εὐαγγελίου."
 )
 const THE_READING_IS_FROM_LUKE = text_factory(
   "The reading is from the holy Gospel according to Luke.",
@@ -21,7 +21,7 @@ const THE_READING_IS_FROM_LUKE = text_factory(
 )
 const CHAP_VERSE_SUBHEADING = chap_verse_factory("Luke. 10:38-42, 11:27-28", "Λου. 10:38-42, 11:27-28")
 const LUKE_CHAP_10_38_TO_42 = text_factory(
-  "Now as they went on their way, Jesus entered a village. And a woman named Martha welcomed him into her house. 39 And she had a sister called Mary, who sat at the Lord's feet and listened to his teaching. But Martha was distracted with much serving. And she went up to him and said, “Lord, do you not care that my sister has left me to serve alone? Tell her then to help me.” But the Lord answered her, “Martha, Martha, you are anxious and troubled about many things, but one thing is necessary. Mary has chosen the good portion, which will not be taken away from her.”",
+  "Now as they went on their way, Jesus entered a village. And a woman named Martha welcomed him into her house. And she had a sister called Mary, who sat at the Lord's feet and listened to his teaching. But Martha was distracted with much serving. And she went up to him and said, “Lord, do you not care that my sister has left me to serve alone? Tell her then to help me.” But the Lord answered her, “Martha, Martha, you are anxious and troubled about many things, but one thing is necessary. Mary has chosen the good portion, which will not be taken away from her.”",
   "Τῷ καιρῷ ἐκείνῳ, εἰσῆλθεν ὁ Ἰησοῦς εἰς κώμην τινά· γυνὴ δέ τις ὀνόματι Μάρθα ὑπεδέξατο αὐτὸν εἰς τὸν οἶκον αὐτῆς. Καὶ τῇδε ἦν ἀδελφὴ καλουμένη Μαρία, ἣ καὶ παρακαθίσασα παρὰ τοὺς πόδας τοῦ Ἰησοῦ ἤκουε τὸν λόγον αὐτοῦ. Ἡ δὲ Μάρθα περιεσπᾶτο περὶ πολλὴν διακονίαν· ἐπιστᾶσα δὲ εἶπε· Κύριε, οὐ μέλει σοι, ὅτι ἡ ἀδελφή μου μόνην με κατέλιπε διακονεῖν; Εἰπὲ οὖν αὐτῇ ἵνα μοι συναντιλάβηται. Ἀποκριθεὶς δὲ εἶπεν αὐτῇ ὁ Ἰησοῦς· Μάρθα, Μάρθα, μεριμνᾷς καὶ τυρβάζῃ περὶ πολλά· ἑνὸς δέ ἐστι χρεία· Μαρία δὲ τὴν ἀγαθὴν μερίδα ἐξελέξατο, ἥτις οὐκ ἀφαιρεθήσεται ἀπ᾿ αὐτῆς."
 )
 const LUKE_CHAP_11_27_TO_28 = text_factory(

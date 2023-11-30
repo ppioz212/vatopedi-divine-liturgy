@@ -6,7 +6,7 @@
 import { useMainStore, useActorStore, useResponseStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
-import { hymn_factory, text_factory} from '@/factories'
+import { hymn_factory, text_factory } from '@/factories'
 
 const prayers = useMainStore()
 const actors = useActorStore()
@@ -32,6 +32,7 @@ const section = reactive({
     actors.DEACON,
     prayers.AND_UNTO_AGES_OF_AGES,
     actors.CHOIR,
+    responses.AMEN,
     TRISAGION_HYMN,
     prayers.GLORIA_PATRI_EE_NOW_AND_EVER_AMEN,
     AGIOS_ATHANATOS_ELEISON_NYMAS
