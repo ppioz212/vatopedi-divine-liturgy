@@ -1,9 +1,9 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().LITANY_OF_PEACE_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
-import { useMainStore, useActorStore } from '@/store';
+import { useMainStore, useActorStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { text_factory } from '@/factories';

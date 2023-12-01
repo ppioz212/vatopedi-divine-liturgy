@@ -1,9 +1,9 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().TRISAGION_HYMN_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
-import { useMainStore, useActorStore, useResponseStore } from '@/store';
+import { useMainStore, useActorStore, useResponseStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { hymn_factory, text_factory } from '@/factories'

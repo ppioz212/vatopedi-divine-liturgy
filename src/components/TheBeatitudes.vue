@@ -1,9 +1,9 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().THE_BEATITUDES_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
-import { useMainStore, useActorStore } from '@/store';
+import { useMainStore, useActorStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { verse_factory, hymn_factory, text_factory, subHeading_factory } from '@/factories'

@@ -1,9 +1,9 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().SECOND_ANTIPHON_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
-import { useMainStore, useActorStore, useResponseStore } from '@/store';
+import { useMainStore, useActorStore, useResponseStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { text_factory, verse_factory, subHeading_factory, hymn_factory } from '@/factories';

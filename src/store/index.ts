@@ -1,6 +1,31 @@
 import { defineStore } from 'pinia'
 import { actor_factory, text_factory, response_factory } from '@/factories'
 
+export const useIdStore = defineStore('ids', {
+  state: () => {
+    return {
+      LITANY_OF_PEACE_ID: 'litany-of-peace',
+      FIRST_ANTIPHON_ID: 'first-antiphon',
+      SECOND_ANTIPHON_ID: 'second-antiphon',
+      THE_BEATITUDES_ID: 'the-beatitudes',
+      SMALL_ENTRANCE_ID: 'small-entrance',
+      TRISAGION_HYMN_ID: 'trisagion-hymn',
+      DYNAMIS_TRISAGION_HYMN_ID: 'dynamis-trisagion-hymn',
+      THE_EPISTLE_ID: 'the-epistle',
+      ALLELUIA_CHANT_ID: 'alleluia-chant',
+      THE_GOSPEL_ID: 'the-gospel',
+      THE_LITANY_OF_SUPPLICATION_AND_CATECHUMENS_ID: 'the-litany-of-supplication-and-catechumens',
+      CHERUBIC_HYMN_ID: 'cherubic-hymn',
+      LITANY_OF_COMPLETION_ID: 'litany-of-completion',
+      THE_SYMBOL_OF_FAITH_ID: 'the-symbol-of-faith',
+      HOLY_ANAPHORA_ID: 'holy-anaphora',
+      AXION_ESTIN_ID: 'axion-estin',
+      RECIEVE_THE_CUP_ID: 'recieve-the-cup',
+      FINAL_LITANY_ID: 'final-litany'
+    }
+  }
+})
+
 export const useActorStore = defineStore('actor', {
   state: () => {
     return {

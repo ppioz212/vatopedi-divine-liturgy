@@ -1,9 +1,9 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().THE_GOSPEL_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
-import { useMainStore, useActorStore, useResponseStore } from '@/store';
+import { useMainStore, useActorStore, useResponseStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { text_factory, chap_verse_factory } from '@/factories'

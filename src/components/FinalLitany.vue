@@ -1,10 +1,10 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().FINAL_LITANY_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
 import { reactive } from 'vue';
-import { useMainStore, useActorStore, useResponseStore } from '@/store';
+import { useMainStore, useActorStore, useResponseStore, useIdStore } from '@/store';
 import SectionTemplate from './SectionTemplate.vue';
 import { text_factory } from '@/factories';
 

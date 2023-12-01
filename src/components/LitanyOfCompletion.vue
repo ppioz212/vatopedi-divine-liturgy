@@ -1,64 +1,40 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().LITANY_OF_COMPLETION_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
 import { reactive } from 'vue';
-import { useMainStore, useActorStore, useResponseStore } from '@/store';
+import { useMainStore, useActorStore, useResponseStore, useIdStore } from '@/store';
+import { text_factory, hymn_factory } from '@/factories';
 import SectionTemplate from './SectionTemplate.vue';
 
 const prayers = useMainStore()
 const actors = useActorStore()
 const responses = useResponseStore()
-const LET_US_COMPLETE_OUR_PRAYER = {
-  english: {
-    text: 'Let us complete our prayer to the Lord.'
-  },
-  greek: {
-    text: 'Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ.',
-  }
-}
-const FOR_THE_PRECIOUS_GIFTS = {
-  english: {
-    text: 'For the precious Gifts here presented, let us pray to the Lord.'
-  },
-  greek: {
-    text: 'Ὑπὲρ τῶν προτεθέντων τιμίων δώρων, τοῦ Κυρίου δεηθῶμεν.',
-  }
-}
-const THROUGH_THE_MERCIES_OF_YOUR_ONLY_BEGOTTEN_SON = {
-  english: {
-    text: 'Through the mercies of Your only-begotten Son, with Whom You are blessed, together with Your all-holy, good, and life-creating Spirit, now and forever and to the ages of ages.'
-  },
-  greek: {
-    text: "Διὰ τῶν οἰκτιρμῶν τοῦ μονογενοῦς σου Υἱοῦ, μεθ' οὗ εὐλογητὸς εἶ, σὺν τῷ Παναγίῳ καὶ ἀγαθῷ καὶ ζωοποιῷ σου Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
-  }
-}
-const LET_US_LOVE_ONE_ANOTHER = {
-  english: {
-    text: 'Let us love one another, that with one mind we may confess.'
-  },
-  greek: {
-    text: "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν."
-  }
-}
-const THE_TRINITY_ONE_ESSENCE_UNDIVIDED = {
-  isHymn: true,
-  english: {
-    text: 'Father, Son, and Holy Spirit: Trinity, one in essence and undivided.'
-  },
-  greek: {
-    text: "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον."
-  }
-}
-const THE_DOORS_THE_DOORS_OF_WISDOM = {
-    english: {
-    text: 'The doors! The doors! In wisdom, let us be attentive!'
-  },
-  greek: {
-    text: "Τὰς θύρας, τὰς θύρας· ἐν σοφίᾳ πρόσχωμεν."
-  }
-}
+const LET_US_COMPLETE_OUR_PRAYER = text_factory(
+  'Let us complete our prayer to the Lord.',
+  'Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ.'
+)
+const FOR_THE_PRECIOUS_GIFTS = text_factory(
+  'For the precious Gifts here presented, let us pray to the Lord.',
+  'Ὑπὲρ τῶν προτεθέντων τιμίων δώρων, τοῦ Κυρίου δεηθῶμεν.'
+)
+const THROUGH_THE_MERCIES_OF_YOUR_ONLY_BEGOTTEN_SON = text_factory(
+  'Through the mercies of Your only-begotten Son, with Whom You are blessed, together with Your all-holy, good, and life-creating Spirit, now and forever and to the ages of ages.',
+  "Διὰ τῶν οἰκτιρμῶν τοῦ μονογενοῦς σου Υἱοῦ, μεθ' οὗ εὐλογητὸς εἶ, σὺν τῷ Παναγίῳ καὶ ἀγαθῷ καὶ ζωοποιῷ σου Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
+)
+const LET_US_LOVE_ONE_ANOTHER = text_factory(
+  'Let us love one another, that with one mind we may confess.',
+  "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν."
+)
+const THE_DOORS_THE_DOORS_OF_WISDOM = text_factory(
+  'The doors! The doors! In wisdom, let us be attentive!',
+  "Τὰς θύρας, τὰς θύρας· ἐν σοφίᾳ πρόσχωμεν."
+)
+const THE_TRINITY_ONE_ESSENCE_UNDIVIDED = hymn_factory(
+  'Father, Son, and Holy Spirit: Trinity, one in essence and undivided.',
+  "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον."
+)
 const section = reactive({
   title: {
     english: 'The Litany Of Completion',

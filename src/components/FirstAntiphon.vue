@@ -1,14 +1,14 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().FIRST_ANTIPHON_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
-import { useMainStore, useActorStore } from '@/store';
+import { useMainStore, useActorStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { text_factory, verse_factory, subHeading_factory } from '@/factories';
 
-const main = useMainStore()
+const prayers = useMainStore()
 const actors = useActorStore()
 const PSALM_102_SUBHEADING = subHeading_factory('Psalm 102 (103)', 'Ψαλμὸς 102 (103)'); // 
 const INTRO = text_factory(
@@ -160,18 +160,18 @@ const section = reactive({
     VERSE20,
     VERSE21,
     VERSE22,
-    main.GLORIA_PATRI_EE_NOW_AND_EVER_AMEN,
+    prayers.GLORIA_PATRI_EE_NOW_AND_EVER_AMEN,
     OUTRO,
     actors.DEACON,
-    main.AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY,
-    main.LORD_HAVE_MERCY,
-    main.HELP_US_SAVE_US,
-    main.LORD_HAVE_MERCY,
-    main.COMMEMORATING_THE_PANAGIA,
-    main.TO_YOU_O_LORD,
+    prayers.AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY,
+    prayers.LORD_HAVE_MERCY,
+    prayers.HELP_US_SAVE_US,
+    prayers.LORD_HAVE_MERCY,
+    prayers.COMMEMORATING_THE_PANAGIA,
+    prayers.TO_YOU_O_LORD,
     actors.PRIEST,
-    main.FOR_YOURS_IS_DOMINION_POWER_GLORY,
-    main.AMEN
+    prayers.FOR_YOURS_IS_DOMINION_POWER_GLORY,
+    prayers.AMEN
   ]
 });
 </script>

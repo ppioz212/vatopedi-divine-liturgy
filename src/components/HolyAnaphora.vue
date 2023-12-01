@@ -1,9 +1,9 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().HOLY_ANAPHORA_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
-import { useActorStore, useResponseStore } from '@/store';
+import { useActorStore, useResponseStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { hymn_factory, text_factory, low_voice_factory } from '@/factories'

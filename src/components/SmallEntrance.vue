@@ -1,9 +1,9 @@
 <template>
-  <SectionTemplate :section="section" />
+  <SectionTemplate :id="useIdStore().SMALL_ENTRANCE_ID" :section="section" />
 </template>
 
 <script setup lang="ts">
-import { useActorStore } from '@/store';
+import { useActorStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { hymn_factory } from '@/factories'

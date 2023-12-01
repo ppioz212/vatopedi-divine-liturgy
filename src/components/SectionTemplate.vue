@@ -1,5 +1,6 @@
 <template>
-  <div class="liturgy">
+  <div class="section">
+    <a href="#">Back to the Top</a>
     <div class="header">
       <div class="greek">
         <h2> {{ section.title.greek }}</h2>
@@ -48,24 +49,24 @@ defineProps(['section'])
   margin-bottom: 8px;
 }
 
-.liturgy .greek {
+.section .greek {
   border-right: 1px solid black;
 }
 
-.liturgy>.header,
-.liturgy>.body {
+.section>.header,
+.section>.body {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.liturgy .greek,
-.liturgy .english {
+.section .greek,
+.section .english {
   width: 50%;
   padding: 0 5px;
 }
 
-.liturgy {
+.section {
   text-align: center;
   margin: 0;
 }
