@@ -58,14 +58,6 @@ svg {
     height: 12px;
 }
 
-&:hover {
-    background-color: #E8E8E8;
-
-    svg {
-        fill: #000000;
-    }
-}
-
 .screen-reader-text {
     position: absolute;
     clip-path: inset(50%);
