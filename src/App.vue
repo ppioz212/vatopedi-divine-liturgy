@@ -27,6 +27,7 @@
         <final-litany></final-litany>
       </body>
     </div>
+    <ScrollTopButton />
   </main>
 </template>
 
@@ -49,9 +50,11 @@ import HolyAnaphora from './components/HolyAnaphora.vue';
 import AxionEstin from './components/AxionEstin.vue';
 import RecieveTheCup from './components/RecieveTheCup.vue'
 import FinalLitany from './components/FinalLitany.vue'
+import ScrollTopButton from './components/ScrollTopButton.vue';
 
 import { ref } from 'vue';
 import { useIdStore } from './store';
+
 const ids = useIdStore();
 const links = ref([
   { id: ids.LITANY_OF_PEACE_ID, label: 'Litany of Peace' },
@@ -73,8 +76,6 @@ const links = ref([
   { id: ids.RECIEVE_THE_CUP_ID, label: 'Recieve the Cup' },
   { id: ids.FINAL_LITANY_ID, label: 'Final Litany' },
 ])
-
-
 
 </script>
 

@@ -1,6 +1,5 @@
 <template>
   <div class="section">
-    <a href="#">Back to the Top</a>
     <div class="header">
       <div class="greek">
         <h2> {{ section.title.greek }}</h2>
