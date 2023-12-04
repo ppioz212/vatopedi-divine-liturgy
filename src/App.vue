@@ -32,6 +32,7 @@
 </template>
 
 <script setup lang="ts">
+import ScrollTopButton from './components/ScrollTopButton.vue';
 import LitanyOfPeace from './components/LitanyOfPeace.vue';
 import FirstAntiphon from './components/FirstAntiphon.vue';
 import SecondAntiphon from './components/SecondAntiphon.vue';
@@ -50,7 +51,6 @@ import HolyAnaphora from './components/HolyAnaphora.vue';
 import AxionEstin from './components/AxionEstin.vue';
 import RecieveTheCup from './components/RecieveTheCup.vue'
 import FinalLitany from './components/FinalLitany.vue'
-import ScrollTopButton from './components/ScrollTopButton.vue';
 
 import { ref } from 'vue';
 import { useIdStore } from './store';
