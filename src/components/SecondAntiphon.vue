@@ -99,7 +99,6 @@ const section = reactive({
     VERSE9,
     VERSE10,
     prayers.NOW_AND_EVER_AND_UNTO_AGES_AMEN,
-    OUTRO,
     ONLY_BEGOTTEN_SON_AND_LOGOS_OF_GOD,
     actors.DEACON,
     prayers.AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY,
