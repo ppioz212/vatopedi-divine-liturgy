@@ -7,20 +7,20 @@
       </nav>
 
       <body>
-        <LitanyOfPeace />
-        <FirstAntiphon />
-        <SecondAntiphon />
-        <TheBeatitudes />
-        <SmallEntrance />
-        <TrisagionHymn />
-        <DynamisTrisagionHymn />
-        <TheEpistle />
-        <AlleluiaChant />
-        <TheGospel />
-        <TheLitanyOfSupplicationAndCatechumens />
-        <CherubicHymn />
-        <LitanyOfCompletion />
-        <TheSymbolOfFaith />
+        <litany-of-peace></litany-of-peace>
+        <first-antiphon></first-antiphon>
+        <second-antiphon></second-antiphon>
+        <the-beatitudes></the-beatitudes>
+        <small-entrance></small-entrance>
+        <trisagion-hymn></trisagion-hymn>
+        <dynamis-trisagion-hymn></dynamis-trisagion-hymn>
+        <the-epistle></the-epistle>
+        <alleluia-chant></alleluia-chant>
+        <the-gospel></the-gospel>
+        <the-litany-of-supplication-and-catechumens></the-litany-of-supplication-and-catechumens>
+        <cherubic-hymn></cherubic-hymn>
+        <litany-of-completion></litany-of-completion>
+        <the-symbol-of-faith></the-symbol-of-faith>
         <holy-anaphora></holy-anaphora>
         <axion-estin></axion-estin>
         <recieve-the-cup></recieve-the-cup>
