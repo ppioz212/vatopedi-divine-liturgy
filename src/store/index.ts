@@ -21,7 +21,8 @@ export const useIdStore = defineStore('ids', {
       HOLY_ANAPHORA_ID: 'holy-anaphora',
       AXION_ESTIN_ID: 'axion-estin',
       RECIEVE_THE_CUP_ID: 'recieve-the-cup',
-      FINAL_LITANY_ID: 'final-litany'
+      FINAL_LITANY_ID: 'final-litany',
+      THE_EUCHARIST_ID: 'the-eucharist'
     }
   }
 })
@@ -115,9 +116,21 @@ export const useMainStore = defineStore('main', {
         'For You, our God, are holy, and to You we offer up glory, to the Father and to the Son and to the Holy Spirit, now and forever...',
         'Ὅτι ἅγιος εἶ, ὁ Θεὸς ἡμῶν, καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεί…'
       ),
+      FOR_YOU_ARE_OUR_SANCTIFICATION: text_factory(
+        'For You are our sanctification, and to You we give glory, to the Father and to the Son and to the Holy Spirit, now and forever and to the ages of ages.',
+        'Ὅτι σὺ εἶ ὁ ἁγιασμὸς ἡμῶν, καὶ σοὶ τὴν δόξαν ἀναπέμπομεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
+      ),
       THAT_EVER_GUARDED_BY_YOUR_MIGHT: text_factory(
         'That, ever guarded by Your might, we may ascribe glory to You, to the Father and to the Son and to the Holy Spirit, now and forever and to the ages of ages.',
         'Ὅπως ὑπὸ τοῦ κράτους σου πάντοτε φυλαττόμενοι, σοὶ δόξαν ἀναπέμπωμεν, τῷ Πατρὶ καὶ τῷ Υἱῷ καὶ τῷ Ἁγίῳ Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
+      ),
+      FOR_THINE_IS_THE_KINGDON_AND_THE_POWER_AND_THE_GLORY: text_factory(
+        'For Thine is the kingdom and the power and the glory, of the Father and the Son and the Holy Spirit, now and forever and to ages of ages.',
+        'Ὅτι σοῦ ἐστιν ἡ βασιλεία καὶ ἡ δύναμις καὶ ἡ δόξα τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
+      ),
+      THROUGH_THE_GRACE_AND_COMPASSION_AND_LOVE: text_factory(
+        'Through the grace, compassion, and love for mankind of Your only-begotten Son, with whom You are blessed, together with Your all-holy, good, and life-creating Spirit, now and forever and to the ages of ages.',
+        'Χάριτι καὶ οἰκτιρμοῖς καὶ φιλανθρωπίᾳ τοῦ μονογενοῦς σου Υἱοῦ, μεθʼ οὗ εὐλογητὸς εἶ, σὺν τῷ παναγίῳ καὶ ἀγαθῷ καὶ ζωοποιῷ σου Πνεύματι, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
       ),
       GLORIA_PATRI_EE_NOW_AND_EVER_AMEN: text_factory(
         'Glory to the Father and to the Son and to the Holy Spirit. Now and forever and to the ages of ages. Amen.',
@@ -138,6 +151,10 @@ export const useMainStore = defineStore('main', {
       AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY: text_factory(
         'Again and again, in peace, let us pray to the Lord.',
         'Ἔτι καὶ ἔτι ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.'
+      ),
+      ALWAYS_NOW_AND_FOREVER_AND_TO_THE_AGES_OF_AGES: text_factory(
+        'Always, now and forever and to the ages of ages.',
+        'Πάντοτε, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.'
       ),
       THAT_THE_WHOLE_DAY_MAY_BE: text_factory(
         'That the whole day may be perfect, holy, peaceful, and sinless, let us ask the Lord.',

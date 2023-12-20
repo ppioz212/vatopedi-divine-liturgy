@@ -25,6 +25,7 @@
         <axion-estin></axion-estin>
         <recieve-the-cup></recieve-the-cup>
         <final-litany></final-litany>
+        <the-eucharist></the-eucharist>
       </body>
     </div>
     <ScrollTopButton />
@@ -50,7 +51,8 @@ import TheSymbolOfFaith from './components/TheSymbolOfFaith.vue';
 import HolyAnaphora from './components/HolyAnaphora.vue';
 import AxionEstin from './components/AxionEstin.vue';
 import RecieveTheCup from './components/RecieveTheCup.vue'
-import FinalLitany from './components/FinalLitany.vue'
+import FinalLitany from './components/FinalLitany.vue';
+import TheEucharist from './components/TheEucharist.vue';
 
 import { ref } from 'vue';
 import { useIdStore } from './store';
@@ -75,6 +77,7 @@ const links = ref([
   { id: ids.AXION_ESTIN_ID, label: 'Axion Estin' },
   { id: ids.RECIEVE_THE_CUP_ID, label: 'Recieve the Cup' },
   { id: ids.FINAL_LITANY_ID, label: 'Final Litany' },
+  { id: ids.THE_EUCHARIST_ID, label: 'The Eucharist' }
 ])
 
 </script>

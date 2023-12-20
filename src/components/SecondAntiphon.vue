@@ -6,7 +6,7 @@
 import { useMainStore, useActorStore, useResponseStore, useIdStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
-import { text_factory, verse_factory, subHeading_factory, hymn_factory } from '@/factories';
+import { verse_factory, subHeading_factory, hymn_factory } from '@/factories';
 
 const prayers = useMainStore()
 const actors = useActorStore()
@@ -69,10 +69,6 @@ const VERSE10 = verse_factory(
   '10',
   "The Lord shall reign forever, Your God, O Zion, to all generations.",
   "Βασιλεύσει Κύριος εἰς τὸν αἰῶνα, ὁ Θεός σου Σιὼν εἰς γενεὰν καὶ γενεάν."
-)
-const OUTRO = text_factory(
-  'Bless the Lord, O my soul, And all that is within me, bless His holy name! Bless the Lord!',
-  'Εὐλόγει ἡ ψυχή μου, τὸν Κύριον, καὶ πάντα τὰ ἐντός μου, τὸ ὄνομα τὸ ἅγιον αὐτοῦ. εὐλογητὸς εἶ, Κύριε!'
 )
 const ONLY_BEGOTTEN_SON_AND_LOGOS_OF_GOD = hymn_factory(
   'Only-begotten Son and Logos of God, being immortal, You condescended for our salvation to take flesh from the holy Theotokos and ever-virgin Mary and, without change, became man. Christ, our God, You were crucified and conquered death by death. Being one of the Holy Trinity, glorified with the Father and the Holy Spirit: Save us.',
