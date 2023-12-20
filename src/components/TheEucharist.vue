@@ -73,7 +73,6 @@ const section = reactive({
     responses.TO_YOU_O_LORD,
     prayers.FOR_YOU_ARE_OUR_SANCTIFICATION,
     responses.AMEN,
-    
   ]
 });
 </script>

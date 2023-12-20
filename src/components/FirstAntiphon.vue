@@ -3,13 +3,14 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore, useActorStore, useIdStore } from '@/store';
+import { useMainStore, useActorStore, useIdStore, useResponseStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { text_factory, verse_factory, subHeading_factory } from '@/factories';
 
 const prayers = useMainStore()
 const actors = useActorStore()
+const responses = useResponseStore()
 const PSALM_102_SUBHEADING = subHeading_factory('Psalm 102 (103)', 'Ψαλμὸς 102 (103)'); // 
 const INTRO = text_factory(
   'Bless the Lord, O my soul, Bless the Lord!',
@@ -164,14 +165,14 @@ const section = reactive({
     OUTRO,
     actors.DEACON,
     prayers.AGAIN_AND_AGAIN_IN_PEACE_LET_US_PRAY,
-    prayers.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
     prayers.HELP_US_SAVE_US,
-    prayers.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
     prayers.COMMEMORATING_THE_PANAGIA,
-    prayers.TO_YOU_O_LORD,
+    responses.TO_YOU_O_LORD,
     actors.PRIEST,
     prayers.FOR_YOURS_IS_DOMINION_POWER_GLORY,
-    prayers.AMEN
+    responses.AMEN
   ]
 });
 </script>

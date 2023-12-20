@@ -3,13 +3,14 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore, useActorStore, useIdStore } from '@/store';
+import { useMainStore, useActorStore, useIdStore, useResponseStore } from '@/store';
 import { reactive } from 'vue';
 import SectionTemplate from './SectionTemplate.vue';
 import { text_factory } from '@/factories';
 
-const main = useMainStore()
+const prayers = useMainStore()
 const actors = useActorStore()
+const responses = useResponseStore();
 const BLESS_MASTER = text_factory(
   'Master, give the blessing.',
   'Εὐλόγησον, Δέσποτα.'
@@ -63,35 +64,35 @@ const section = reactive({
     BLESS_MASTER,
     actors.PRIEST,
     BLESSED_IS_THE_KINGDOM,
-    main.AMEN,
+    responses.AMEN,
     actors.DEACON,
     IN_PEACE_LET_US_PRAY,
-    main.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
     FOR_THE_PEACE_ABOVE,
-    main.LORD_HAVE_MERCY,
-    main.FOR_THIS_HOLY_HOUSE,
-    main.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
+    prayers.FOR_THIS_HOLY_HOUSE,
+    responses.LORD_HAVE_MERCY,
     FOR_PIOUS_ORTHODOX,
-    main.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
     FOR_OUR_ARCHBISHOP,
-    main.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
     FOR_OUR_COUNTRY_PRES,
-    main.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
     FOR_OUR_ARCHDIOCESE,
-    main.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
     FOR_FAVORABLE_WEATHER,
-    main.LORD_HAVE_MERCY,
+    responses.LORD_HAVE_MERCY,
     FOR_TRAVEL_SICK_SUFFURING,
-    main.LORD_HAVE_MERCY,
-    main.FOR_DELIVERANCE_DANGER,
-    main.LORD_HAVE_MERCY,
-    main.HELP_US_SAVE_US,
-    main.LORD_HAVE_MERCY,
-    main.COMMEMORATING_THE_PANAGIA,
-    main.TO_YOU_O_LORD,
+    responses.LORD_HAVE_MERCY,
+    prayers.FOR_DELIVERANCE_DANGER,
+    responses.LORD_HAVE_MERCY,
+    prayers.HELP_US_SAVE_US,
+    responses.LORD_HAVE_MERCY,
+    prayers.COMMEMORATING_THE_PANAGIA,
+    responses.TO_YOU_O_LORD,
     actors.PRIEST,
-    main.FOR_TO_YOU_BELONG_ALL_GLORY_HONOR_WORSHIP,
-    main.AMEN
+    prayers.FOR_TO_YOU_BELONG_ALL_GLORY_HONOR_WORSHIP,
+    responses.AMEN
   ]
 });
 </script>

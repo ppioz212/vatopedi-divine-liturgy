@@ -15,6 +15,7 @@ export function low_voice_factory(englishText: string, greekText: string): objec
 }
 
 export function response_factory(englishText: string, greekText: string): object {
+  englishText = ('( ' + englishText.trim() + ' )').replace('  ', ' ')
   return text_factory(englishText, greekText, { isItalics: true })
 }
 

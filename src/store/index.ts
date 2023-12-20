@@ -22,7 +22,8 @@ export const useIdStore = defineStore('ids', {
       AXION_ESTIN_ID: 'axion-estin',
       RECIEVE_THE_CUP_ID: 'recieve-the-cup',
       FINAL_LITANY_ID: 'final-litany',
-      THE_EUCHARIST_ID: 'the-eucharist'
+      THE_EUCHARIST_ID: 'the-eucharist',
+      THE_FINAL_WISH_ID: 'the-final-wish',
     }
   }
 })
@@ -43,23 +44,27 @@ export const useActorStore = defineStore('actor', {
 export const useResponseStore = defineStore('response', {
   state: () => {
     return {
-      LORD_HAVE_MERCY: response_factory('( Lord, have mercy. )', '( Κύριε, ἐλέησον. )'),
-      AMEN: response_factory('( Amen. )', '( Ἀμήν. )'),
-      TO_YOU_O_LORD: response_factory('( To You, O Lord. )', '( Σοί, Κύριε. )'),
-      GRANT_THIS_O_LORD: response_factory('( Grant this, O Lord. )', '( Παράσχου, Κύριε. )'),
+      LORD_HAVE_MERCY: response_factory('Lord, have mercy.', 'Κύριε, ἐλέησον.'),
+      AMEN: response_factory('Amen.', 'Ἀμήν.'),
+      TO_YOU_O_LORD: response_factory('To You, O Lord.', 'Σοί, Κύριε.'),
+      GRANT_THIS_O_LORD: response_factory('Grant this, O Lord.', 'Παράσχου, Κύριε.'),
       AND_WITH_YOUR_SPIRIT: response_factory(
-        '( And with your spirit. )',
-        '( Καὶ τῷ πνεύματί σου. )'
+        'And with your spirit.',
+        'Καὶ τῷ πνεύματί σου.'
       ),
       GLORY_TO_YOU_O_LORD_GLORY_TO_YOU: response_factory(
-        '( Glory to you O Lord, Glory to You. )',
-        '( Δόξα σοι, Κύριε, δόξα σοι. )'
+        'Glory to you O Lord, Glory to You.',
+        'Δόξα σοι, Κύριε, δόξα σοι.'
       ),
       LORD_HAVE_MERCY_X3: response_factory(
-        '( Lord have mercy, Lord have mercy, Lord have mercy. )',
-        '( Κύριε ἐλέησον, Κύριε ἐλέησον, Κύριε ἐλέησον. )'
+        'Lord have mercy, Lord have mercy, Lord have mercy.',
+        'Κύριε ἐλέησον, Κύριε ἐλέησον, Κύριε ἐλέησον.'
       ),
-      AND_WITH_YOUR_SPIRIT_TOU: text_factory('And with your spirit.', 'Καὶ μετὰ τοῦ πνεύματός σου.')
+      AND_WITH_YOUR_SPIRIT_TOU: text_factory(
+        'And with your spirit.',
+        'Καὶ μετὰ τοῦ πνεύματός σου.'
+      ),
+      IN_THE_NAME_OF_THE_LORD: response_factory('In the Name of the Lord.', 'Ἐν ὀνόματι Κυρίου.')
     }
   }
 })
@@ -80,6 +85,7 @@ export const useMainStore = defineStore('main', {
       PEACE_BE_WITH_YOU: text_factory('Peace be with you.', 'Εἰρήνη σοί.'),
       SOPHIA_ARISE: text_factory('Wisdom. Arise.', 'Σοφία. Ὀρθοί.'),
       LET_US_PRAY_TO_THE_LORD: text_factory('Let us pray to the Lord.', 'Τοῦ Κυρίου δεηθῶμεν.'),
+      LET_US_GO_FORTH_IN_PEACE: text_factory('Let us go forth in peace.', 'Ἐν εἰρήνῃ προέλθωμεν.'),
       HELP_US_SAVE_US: text_factory(
         'Help us, save us, have mercy on us, and protect us, O God, by Your grace.',
         'Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς, ὁ Θεός, τῇ σῇ χάριτι.'
