@@ -11,11 +11,11 @@ import { hymn_factory } from '@/factories';
 const actors = useActorStore();
 const responses = useResponseStore();
 const HYMN_1 = hymn_factory(
-  'Blessed be the name of the Lord, from this time forth and to the ages. (twice)',
+  'Blessed be the name of the Lord, both now and to the ages. (twice)',
   'Εἴη τὸ ὄνομα Κυρίου εὐλογημένον, ἀπὸ τοῦ νῦν καὶ ἕως τοῦ αἰῶνος. (δίς)'
 );
 const HYMN_2 = hymn_factory(
-  'Blessed be the name of the Lord, from this time forth and to the ages.',
+  'Blessed be the name of the Lord, both now and to the ages.',
   'Τὸ ὄνομα Κυρίου εἴη εὐλογημένον, ἀπὸ τοῦ νῦν καὶ ἕως τοῦ αἰῶνος.'
 );
 const section = reactive({
@@ -25,7 +25,8 @@ const section = reactive({
   },
   body: [
     responses.AMEN,
-    actors.CHOIR, HYMN_1,
+    actors.CHOIR,
+    HYMN_1,
     HYMN_2,
   ]
 });

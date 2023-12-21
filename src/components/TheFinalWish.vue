@@ -11,10 +11,6 @@ import { text_factory } from '@/factories';
 const prayers = useMainStore();
 const actors = useActorStore();
 const responses = useResponseStore();
-const HOLY_FATHER_BLESS = text_factory(
-  'Holy Father, bless.',
-  'Πάτερ ἅγιε, εὐλόγησον.'
-);
 const O_LORD_BLESS_THOSE_WHO = text_factory(
   'O Lord, Who blesses those who bless You and sanctifies those who put their trust in You, save Your people and bless Your inheritance.',
   'Ὁ εὐλογῶν τοὺς εὐλογοῦντάς σε, Κύριε, καὶ ἁγιάζων τοὺς ἐπὶ σοὶ πεποιθότας, σῶσον τὸν λαόν σου καὶ εὐλόγησον τὴν κληρονομίαν σου.'
@@ -41,7 +37,7 @@ const section = reactive({
     responses.IN_THE_NAME_OF_THE_LORD,
     actors.DEACON, prayers.LET_US_PRAY_TO_THE_LORD,
     responses.LORD_HAVE_MERCY_X3,
-    HOLY_FATHER_BLESS,
+    prayers.HOLY_FATHER_BLESS,
     actors.PRIEST, O_LORD_BLESS_THOSE_WHO,
     responses.AMEN,
     PROTECT_THE_WHOLE_BODY_OF_YOUR_CHURCH,

@@ -29,6 +29,8 @@
         <the-final-wish></the-final-wish>
         <apolytikon-of-thanksgiving></apolytikon-of-thanksgiving>
         <blessed-is-the-name></blessed-is-the-name>
+        <the-dismissal></the-dismissal>
+        <all-holy-lady></all-holy-lady>
       </body>
     </div>
     <ScrollTopButton />
@@ -59,6 +61,8 @@ import TheEucharist from './components/TheEucharist.vue';
 import TheFinalWish from './components/TheFinalWish.vue';
 import ApolytikonOfThanksgiving from './components/ApolytikonOfThanksgiving.vue';
 import BlessedIsTheName from './components/BlessedIsTheName.vue';
+import TheDismissal from './components/TheDismissal.vue';
+import AllHolyLady from './components/AllHolyLady.vue';
 
 import { ref } from 'vue';
 import { useIdStore } from './store';
@@ -87,6 +91,8 @@ const links = ref([
   { id: ids.THE_FINAL_WISH_ID, label: 'The Final Wish' },
   { id: ids.APOLYTIKON_OF_THANKSGIVING_ID, label: 'Apolytikon of Thanksgiving' },
   { id: ids.BLESSED_BE_THE_NAME_OF_THE_LORD_ID, label: 'Blessed be the Name of the Lord' },
+  { id: ids.THE_DISMISSAL_ID, label: 'The Dismissal' },
+  { id: ids.ALL_HOLY_LADY_ID, label: 'All Holy Lady' }
 ])
 
 </script>

@@ -25,7 +25,9 @@ export const useIdStore = defineStore('ids', {
       THE_EUCHARIST_ID: 'the-eucharist',
       THE_FINAL_WISH_ID: 'the-final-wish',
       APOLYTIKON_OF_THANKSGIVING_ID: 'apolytikon-of-thanksgiving',
-      BLESSED_BE_THE_NAME_OF_THE_LORD_ID: 'blessed-be-the-name-of-the-lord'
+      BLESSED_BE_THE_NAME_OF_THE_LORD_ID: 'blessed-be-the-name-of-the-lord',
+      THE_DISMISSAL_ID: 'the-dismissal',
+      ALL_HOLY_LADY_ID: 'all-holy-lady'
     }
   }
 })
@@ -85,6 +87,15 @@ export const useMainStore = defineStore('main', {
       SOPHIA_ARISE: text_factory('Wisdom. Arise.', 'Σοφία. Ὀρθοί.'),
       LET_US_PRAY_TO_THE_LORD: text_factory('Let us pray to the Lord.', 'Τοῦ Κυρίου δεηθῶμεν.'),
       LET_US_GO_FORTH_IN_PEACE: text_factory('Let us go forth in peace.', 'Ἐν εἰρήνῃ προέλθωμεν.'),
+      GLORY_TO_YOU_O_GOD_GLORY_TO_YOU: text_factory(
+        'Glory to You, O God. Glory to You.',
+        'Δόξα σοι, ὁ Θεὸς ἡμῶν, δόξα σοι.'
+      ),
+      THROUGH_THE_PRAYERS_OF_OUR_HOLY_FATHERS: text_factory(
+        'Through the prayers of our holy fathers, Lord Jesus Christ, our God, have mercy and save us.',
+        'Δι᾿ εὐχῶν τῶν ἁγίων πατέρων ἡμῶν, Κύριε Ἰησοῦ Χριστὲ ὁ Θεός, ἐλέησον ἡμᾶς.'
+      ),
+      HOLY_FATHER_BLESS: text_factory('Holy Father, bless.', 'Πάτερ ἅγιε, εὐλόγησον.'),
       HELP_US_SAVE_US: text_factory(
         'Help us, save us, have mercy on us, and protect us, O God, by Your grace.',
         'Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς, ὁ Θεός, τῇ σῇ χάριτι.'
