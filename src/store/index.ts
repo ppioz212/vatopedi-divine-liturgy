@@ -24,6 +24,8 @@ export const useIdStore = defineStore('ids', {
       FINAL_LITANY_ID: 'final-litany',
       THE_EUCHARIST_ID: 'the-eucharist',
       THE_FINAL_WISH_ID: 'the-final-wish',
+      APOLYTIKON_OF_THANKSGIVING_ID: 'apolytikon-of-thanksgiving',
+      BLESSED_BE_THE_NAME_OF_THE_LORD_ID: 'blessed-be-the-name-of-the-lord'
     }
   }
 })
@@ -48,10 +50,7 @@ export const useResponseStore = defineStore('response', {
       AMEN: response_factory('Amen.', 'Ἀμήν.'),
       TO_YOU_O_LORD: response_factory('To You, O Lord.', 'Σοί, Κύριε.'),
       GRANT_THIS_O_LORD: response_factory('Grant this, O Lord.', 'Παράσχου, Κύριε.'),
-      AND_WITH_YOUR_SPIRIT: response_factory(
-        'And with your spirit.',
-        'Καὶ τῷ πνεύματί σου.'
-      ),
+      AND_WITH_YOUR_SPIRIT: response_factory('And with your spirit.', 'Καὶ τῷ πνεύματί σου.'),
       GLORY_TO_YOU_O_LORD_GLORY_TO_YOU: response_factory(
         'Glory to you O Lord, Glory to You.',
         'Δόξα σοι, Κύριε, δόξα σοι.'
