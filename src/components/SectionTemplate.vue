@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <div class="header">
+    <header class="header">
       <div class="greek">
         <h2> {{ section.title.greek }}</h2>
         <!-- <section-subheadings :section="section"></section-subheadings> -->
@@ -9,8 +9,9 @@
         <h2>{{ section.title.english }}</h2>
         <!-- <section-subheadings :section="section"></section-subheadings> -->
       </div>
-    </div>
-    <div class="body" v-for="(element, index) in section.body" :key="index">
+    </header>
+
+    <body class="body" v-for="(element, index) in section.body" :key="index">
       <div class="greek">
         <p class="text" :class="{
           italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading,
@@ -29,7 +30,16 @@
           {{ element.english.text }}
         </p>
       </div>
-    </div>
+      <div class="tranliteration">
+        <p class="text" :class="{
+          italics: element.isItalics, actor: element.isActor, 'sub-heading': element.isSubHeading,
+          hymn: element.isHymn, 'chap-verse': element.isChapVerse, 'inaudible': element.isInaudible
+        }">
+          <span v-show="element.verseNum != null" class="verse">Verse {{ element.verseNum }}: </span>
+          {{ element.transliteration }}
+        </p>
+      </div>
+    </body>
   </div>
 </template>
 
@@ -48,7 +58,7 @@ defineProps(['section'])
   margin-bottom: 8px;
 }
 
-.section .greek {
+.section .body>div:not(:last-child) {
   border-right: 1px solid black;
 }
 
@@ -59,9 +69,8 @@ defineProps(['section'])
   margin: 0 auto;
 }
 
-.section .greek,
-.section .english {
-  width: 50%;
+.section .body>div {
+  width: 33.33%;
   padding: 0 5px;
 }
 

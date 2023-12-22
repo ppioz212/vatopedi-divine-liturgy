@@ -1,3 +1,63 @@
+//write a function called get_tranliteration that takes a string of greek text and returns a string of transliterated text
+//write a function called get_tranliteration that takes a string of greek text and returns a string of transliterated text
+function get_transliteration(greekText: string) {
+  const transliteration_map = [
+    { regex: /α/g, replacement: 'a' },
+    { regex: /β/g, replacement: 'b' },
+    { regex: /γ/g, replacement: 'g' },
+    { regex: /δ/g, replacement: 'd' },
+    { regex: /ε|έ/g, replacement: 'e' },
+    { regex: /ζ/g, replacement: 'z' },
+    { regex: /η|ἡ|ή/g, replacement: 'i' },
+    { regex: /θ/g, replacement: 'th' },
+    { regex: /ι/g, replacement: 'i' },
+    { regex: /κ/g, replacement: 'k' },
+    { regex: /λ/g, replacement: 'l' },
+    { regex: /μ/g, replacement: 'm' },
+    { regex: /ν/g, replacement: 'n' },
+    { regex: /ξ/g, replacement: 'x' },
+    { regex: /ο|ό/g, replacement: 'o' },
+    { regex: /π/g, replacement: 'p' },
+    { regex: /ρ/g, replacement: 'r' },
+    { regex: /σ/g, replacement: 's' },
+    { regex: /τ/g, replacement: 't' },
+    { regex: /υ|ῦ/g, replacement: 'u' },
+    { regex: /ὐ/g, replacement: 'v' },
+    { regex: /φ/g, replacement: 'f' },
+    { regex: /χ/g, replacement: 'ch' },
+    { regex: /ψ/g, replacement: 'ps' },
+    { regex: /ω/g, replacement: 'o' },
+    { regex: /ς/g, replacement: 's' },
+    { regex: /Α/g, replacement: 'A' },
+    { regex: /Β/g, replacement: 'V' },
+    { regex: /Γ/g, replacement: 'G' },
+    { regex: /Δ/g, replacement: 'D' },
+    { regex: /Ε/g, replacement: 'E' },
+    { regex: /Ζ/g, replacement: 'Z' },
+    { regex: /Η/g, replacement: 'H' },
+    { regex: /Θ/g, replacement: 'Th' },
+    { regex: /Ι/g, replacement: 'I' },
+    { regex: /Κ/g, replacement: 'K' },
+    { regex: /Λ/g, replacement: 'L' },
+    { regex: /Μ/g, replacement: 'M' },
+    { regex: /Ν/g, replacement: 'N' },
+    { regex: /Ξ/g, replacement: 'X' },
+    { regex: /Ο/g, replacement: 'O' },
+    { regex: /Π/g, replacement: 'P' },
+    { regex: /Ρ/g, replacement: 'R' },
+    { regex: /Σ/g, replacement: 'S' },
+    { regex: /Τ/g, replacement: 'T' },
+    { regex: /Υ/g, replacement: 'U' },
+    { regex: /Φ/g, replacement: 'F' },
+    { regex: /Χ/g, replacement: 'Ch' },
+    { regex: /Ψ/g, replacement: 'P' },
+    { regex: /Ω/g, replacement: 'O' }
+  ]
+  transliteration_map.forEach((element) => {
+    greekText = greekText.replace(element.regex, element.replacement)
+  })
+  return greekText
+}
 export function text_factory(englishText: string, greekText: string, obj = {}): object {
   return {
     english: {
@@ -6,6 +66,7 @@ export function text_factory(englishText: string, greekText: string, obj = {}): 
     greek: {
       text: greekText
     },
+    transliteration: get_transliteration(greekText),
     ...obj
   }
 }
