@@ -67,32 +67,32 @@ import AllHolyLady from './components/AllHolyLady.vue';
 import { ref } from 'vue';
 import { useIdStore } from './store';
 
-const ids = useIdStore();
+const idStore = useIdStore();
 const links = ref([
-  { id: ids.LITANY_OF_PEACE_ID, label: 'Litany of Peace' },
-  { id: ids.FIRST_ANTIPHON_ID, label: 'First Antiphon' },
-  { id: ids.SECOND_ANTIPHON_ID, label: 'Second Antiphon' },
-  { id: ids.THE_BEATITUDES_ID, label: 'The Beatitudes' },
-  { id: ids.SMALL_ENTRANCE_ID, label: 'Small Entrance' },
-  { id: ids.TRISAGION_HYMN_ID, label: 'Trisagion Hymn' },
-  { id: ids.DYNAMIS_TRISAGION_HYMN_ID, label: 'Dynamis Trisagion Hymn' },
-  { id: ids.THE_EPISTLE_ID, label: 'The Epistle' },
-  { id: ids.ALLELUIA_CHANT_ID, label: 'Alleluia Chant' },
-  { id: ids.THE_GOSPEL_ID, label: 'The Gospel' },
-  { id: ids.THE_LITANY_OF_SUPPLICATION_AND_CATECHUMENS_ID, label: 'The Litany of Supplication and Catechumens' },
-  { id: ids.CHERUBIC_HYMN_ID, label: 'Cherubic Hymn' },
-  { id: ids.LITANY_OF_COMPLETION_ID, label: 'Litany of Completion' },
-  { id: ids.THE_SYMBOL_OF_FAITH_ID, label: 'The Symbol of Faith' },
-  { id: ids.HOLY_ANAPHORA_ID, label: 'Holy Anaphora' },
-  { id: ids.AXION_ESTIN_ID, label: 'Axion Estin' },
-  { id: ids.RECIEVE_THE_CUP_ID, label: 'Recieve the Cup' },
-  { id: ids.FINAL_LITANY_ID, label: 'Final Litany' },
-  { id: ids.THE_EUCHARIST_ID, label: 'The Eucharist' },
-  { id: ids.THE_FINAL_WISH_ID, label: 'The Final Wish' },
-  { id: ids.APOLYTIKON_OF_THANKSGIVING_ID, label: 'Apolytikon of Thanksgiving' },
-  { id: ids.BLESSED_BE_THE_NAME_OF_THE_LORD_ID, label: 'Blessed be the Name of the Lord' },
-  { id: ids.THE_DISMISSAL_ID, label: 'The Dismissal' },
-  { id: ids.ALL_HOLY_LADY_ID, label: 'All Holy Lady' }
+  { id: idStore.LITANY_OF_PEACE_ID, label: 'Litany of Peace' },
+  { id: idStore.FIRST_ANTIPHON_ID, label: 'First Antiphon' },
+  { id: idStore.SECOND_ANTIPHON_ID, label: 'Second Antiphon' },
+  { id: idStore.THE_BEATITUDES_ID, label: 'The Beatitudes' },
+  { id: idStore.SMALL_ENTRANCE_ID, label: 'Small Entrance' },
+  { id: idStore.TRISAGION_HYMN_ID, label: 'Trisagion Hymn' },
+  { id: idStore.DYNAMIS_TRISAGION_HYMN_ID, label: 'Dynamis Trisagion Hymn' },
+  { id: idStore.THE_EPISTLE_ID, label: 'The Epistle' },
+  { id: idStore.ALLELUIA_CHANT_ID, label: 'Alleluia Chant' },
+  { id: idStore.THE_GOSPEL_ID, label: 'The Gospel' },
+  { id: idStore.THE_LITANY_OF_SUPPLICATION_AND_CATECHUMENS_ID, label: 'The Litany of Supplication and Catechumens' },
+  { id: idStore.CHERUBIC_HYMN_ID, label: 'Cherubic Hymn' },
+  { id: idStore.LITANY_OF_COMPLETION_ID, label: 'Litany of Completion' },
+  { id: idStore.THE_SYMBOL_OF_FAITH_ID, label: 'The Symbol of Faith' },
+  { id: idStore.HOLY_ANAPHORA_ID, label: 'Holy Anaphora' },
+  { id: idStore.AXION_ESTIN_ID, label: 'Axion Estin' },
+  { id: idStore.RECIEVE_THE_CUP_ID, label: 'Recieve the Cup' },
+  { id: idStore.FINAL_LITANY_ID, label: 'Final Litany' },
+  { id: idStore.THE_EUCHARIST_ID, label: 'The Eucharist' },
+  { id: idStore.THE_FINAL_WISH_ID, label: 'The Final Wish' },
+  { id: idStore.APOLYTIKON_OF_THANKSGIVING_ID, label: 'Apolytikon of Thanksgiving' },
+  { id: idStore.BLESSED_BE_THE_NAME_OF_THE_LORD_ID, label: 'Blessed be the Name of the Lord' },
+  { id: idStore.THE_DISMISSAL_ID, label: 'The Dismissal' },
+  { id: idStore.ALL_HOLY_LADY_ID, label: 'All Holy Lady' }
 ])
 
 </script>
