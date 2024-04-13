@@ -5,7 +5,6 @@
       <nav>
         <a v-for="link in links" :key="link.id" :href="`#${link.id}`">{{ link.label }}</a>
       </nav>
-
       <body>
         <litany-of-peace></litany-of-peace>
         <first-antiphon></first-antiphon>
